@@ -25,7 +25,7 @@ decisions, and sometimes gets it wrong... welcome.
 
 ## Who I am
 
-I'm **Leandro Asrilevich**, although online I'm known as **qazuor**. Full-stack
+I'm **Noriaki Nishida**, although online I'm known as **qazuor**. Full-stack
 developer with a frontend focus, based in Concepcion del Uruguay, Entre Rios,
 Argentina.
 
@@ -149,7 +149,7 @@ If you want to talk about a project, have an idea you want to bring to life, or
 just want to say hi:
 
 - **GitHub**: [@qazuor](https://github.com/qazuor)
-- **LinkedIn**: [Leandro Asrilevich](https://linkedin.com/in/qazuor)
+- **LinkedIn**: [Noriaki Nishida](https://linkedin.com/in/qazuor)
 - **Email**: From the [contact section](/en/contact)
 
 And if you're looking for someone to help you build a digital product, design

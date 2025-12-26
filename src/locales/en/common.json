@@ -68,7 +68,7 @@
         },
         "trustBadges": {
             "ariaLabel": "Trust indicators",
-            "experience": "20+ Years Experience",
+            "experience": "7+ Years Experience",
             "specialty": "Frontend UI/UX Expert with Full-Stack Muscle",
             "leadership": "Technical Leadership (Principal Engineer)",
             "performance": "Performance First: Lighthouse 90+",
@@ -333,7 +333,7 @@
         }
     },
     "seo": {
-        "title": "Leandro Asrilevich - Full-Stack Developer | Modern Web Solutions",
+        "title": "Noriaki Nishida - Full-Stack Developer | Modern Web Solutions",
         "imageAlt": "qazuor - Full-Stack Developer Portfolio"
     },
     "goodies": {
@@ -451,8 +451,8 @@
     },
     "imageAlt": {
         "avatarProfile": "Qazuor profile picture",
-        "footerPhoto": "Leandro Asrilevich, Full-Stack Developer",
-        "heroAvatar": "Leandro Asrilevich - Full-Stack Developer with expertise in React, TypeScript and modern web technologies"
+        "footerPhoto": "Noriaki Nishida, Full-Stack Developer",
+        "heroAvatar": "Noriaki Nishida - Full-Stack Developer with expertise in React, TypeScript and modern web technologies"
     },
     "social": {
         "github": "GitHub",
@@ -483,9 +483,9 @@
         }
     },
     "profile": {
-        "name": "Leandro Asrilevich",
+        "name": "Noriaki Nishida",
         "role": "Full-Stack Developer",
-        "experience": "5+ years"
+        "experience": "7+ years"
     },
     "servicesPreview": {
         "title": "**What I** Can Do For You",

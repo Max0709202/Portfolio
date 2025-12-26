@@ -26,7 +26,7 @@ equivoca... bienvenido.
 
 ## Quién soy
 
-Soy **Leandro Asrilevich**, aunque en internet me conocen como **qazuor**.
+Soy **Noriaki Nishida**, aunque en internet me conocen como **qazuor**.
 Desarrollador full-stack con foco en frontend, basado en Concepción del Uruguay,
 Entre Ríos, Argentina.
 
@@ -153,7 +153,7 @@ Si querés charlar sobre algún proyecto, tenés una idea que querés bajar a
 tierra, o simplemente querés decir hola:
 
 - **GitHub**: [@qazuor](https://github.com/qazuor)
-- **LinkedIn**: [Leandro Asrilevich](https://linkedin.com/in/qazuor)
+- **LinkedIn**: [Noriaki Nishida](https://linkedin.com/in/qazuor)
 - **Email**: Desde la [sección de contacto](/es/contact)
 
 Y si estás buscando a alguien que te ayude a construir un producto digital,

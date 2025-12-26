@@ -1,6 +1,6 @@
 export const profileCode = `const desarrollador = {
   nickName: 'qazuor',
-  fullNameL: 'Leandro Asrilevich',
+  fullNameL: 'Noriaki Nishida',
   birthDate: new Date(1980, 2, 27) // 27 de Marzo, 1980
   rol: 'Desarrollador Full-Stack',
   ubicacion: 'Entre Ríos, Argentina',

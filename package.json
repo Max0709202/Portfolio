@@ -16,7 +16,7 @@
         "lint:fix": "biome check --write .",
         "format": "biome format --write .",
         "format:prettier-astro": "npx prettier --write --print-width 120 --tab-width 4 --use-tabs false --single-quote true --semi true --trailing-comma none --parser astro --plugin prettier-plugin-astro \"src/**/*.astro\"",
-        "format:all": "biome format --write . && pnpm format:prettier-astro",
+        "format:all": "biome format --write . && npm run format:prettier-astro",
         "format:check": "biome check .",
         "format:md": "prettier --write '**/*.md'",
         "format:md:claude": "prettier --write '.claude/**/*.md'",
@@ -114,6 +114,7 @@
         "rollup-plugin-visualizer": "^6.0.5",
         "tailwindcss": "^3.4.18",
         "tailwindcss-animate": "^1.0.7",
+        "tsx": "^4.21.0",
         "typescript": "^5.7.3",
         "vite-plugin-compression": "^0.5.1",
         "vitest": "^4.0.7"

@@ -91,7 +91,7 @@
         "@lhci/cli": "^0.15.1",
         "@philnash/astro-pagination": "^0.5.0",
         "@testing-library/jest-dom": "^6.9.1",
-        "@testing-library/react": "^16.3.0",
+        "@testing-library/react": "^16.3.1",
         "@testing-library/user-event": "^14.6.1",
         "@types/react": "^19.2.2",
         "@types/react-dom": "^19.2.2",

@@ -63,7 +63,6 @@ function generateDarkModeCSS(): string {
  * AUTO-GENERATED FILE - DO NOT EDIT MANUALLY
  * Generated from: src/config/themeConfig.ts (via themeColors.ts)
  * Run: npx tsx scripts/generate-giscus-css.ts
- * Generated at: ${new Date().toISOString()}
  */
 
 /* Main container */
@@ -407,7 +406,6 @@ function generateLightModeCSS(): string {
  * AUTO-GENERATED FILE - DO NOT EDIT MANUALLY
  * Generated from: src/config/themeConfig.ts (via themeColors.ts)
  * Run: npx tsx scripts/generate-giscus-css.ts
- * Generated at: ${new Date().toISOString()}
  */
 
 /* Main container */

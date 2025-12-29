@@ -15,7 +15,6 @@ interface StatsTranslations {
     years: { label: string; description: string };
     technologies: { label: string; description: string };
     coffees: { label: string; description: string };
-    mentored: { label: string; description: string };
 }
 
 interface StatsCounterProps {
@@ -244,8 +243,6 @@ export function StatsCounter({ stats, translations, className = '' }: StatsCount
                 return translations.technologies;
             case 'coffees':
                 return translations.coffees;
-            case 'mentored':
-                return translations.mentored;
             default:
                 return { label: '', description: '' };
         }

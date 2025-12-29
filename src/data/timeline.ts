@@ -19,7 +19,7 @@ interface TimelineItem {
 export const timelineData: TimelineItem[] = [
     {
         id: 'first-pc',
-        year: '1993',
+        year: '2003',
         title: {
             en: 'First PC',
             es: 'Primer PC'
@@ -36,7 +36,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'html-family',
-        year: '2000',
+        year: '2008',
         title: {
             en: 'HTML & Family',
             es: 'HTML y familia'
@@ -53,7 +53,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'freelance-start',
-        year: '2003',
+        year: '2010',
         title: {
             en: 'Freelance Path',
             es: 'Freelance'
@@ -70,7 +70,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'first-crm',
-        year: '2004',
+        year: '2012',
         title: {
             en: 'First CRM & Teaching',
             es: 'Primer CRM y docencia'
@@ -87,7 +87,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'avature-start',
-        year: '2006',
+        year: '2014',
         title: {
             en: 'Avature',
             es: 'Avature'
@@ -104,7 +104,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'js-framework',
-        year: '2008',
+        year: '2016',
         title: {
             en: 'Custom JS Framework',
             es: 'Framework JS propio'
@@ -121,7 +121,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'frontend-focus',
-        year: '2011',
+        year: '2018',
         title: {
             en: 'Frontend Focus',
             es: 'Especialización Frontend'
@@ -138,7 +138,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'tech-leadership',
-        year: '2012',
+        year: '2020',
         title: {
             en: 'Tech Leadership',
             es: 'Liderazgo técnico'
@@ -155,7 +155,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'visual-builder',
-        year: '2019',
+        year: '2021',
         title: {
             en: 'Visual Builder',
             es: 'Visual Builder'
@@ -172,7 +172,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'love-life',
-        year: '2020',
+        year: '2022',
         title: {
             en: 'Life Partner',
             es: 'Amor y vida'
@@ -189,7 +189,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'nocode-automation',
-        year: '2022',
+        year: '2023',
         title: {
             en: 'NO CODE Era',
             es: 'Era NO CODE'
@@ -223,7 +223,7 @@ export const timelineData: TimelineItem[] = [
     },
     {
         id: 'new-beginnings',
-        year: '2025',
+        year: '2026',
         title: {
             en: 'New Chapter',
             es: 'Nuevos comienzos'

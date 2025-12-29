@@ -77,7 +77,7 @@ Professional visual content for brand consistency:
 ## Key Differentiators
 
 1. **Performance First**: Lighthouse scores 95+, optimized Core Web Vitals
-2. **7+ Years Experience**: Deep understanding of web technologies
+2. **8+ Years Experience**: Deep understanding of web technologies
 3. **Bilingual**: Native Spanish, fluent English - ideal for international projects
 4. **Remote-Ready**: 10+ years of remote work experience
 5. **Full-Stack Capable**: From UI design to database architecture

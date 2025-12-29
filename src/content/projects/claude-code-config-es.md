@@ -363,7 +363,7 @@ npx @qazuor/claude-code-config init
 ### Stack
 
 - **Runtime**: Node.js con ESM
-- **Lenguaje**: TypeScript 5.7+ (modo estricto)
+- **Lenguaje**: TypeScript 5.8+ (modo estricto)
 - **Framework CLI**: Commander.js
 - **Prompts**: Inquirer.js
 - **Estilos**: chalk, ora, figlet

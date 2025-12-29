@@ -141,7 +141,7 @@ describe('calculateBookingPrice', () => {
     expect(result.totalPrice).toBe(300);
   });
 
-  it('should apply discount for 7+ nights', () => {
+  it('should apply discount for 8+ nights', () => {
     const input = {
       pricePerNight: 100,
       nights: 7,

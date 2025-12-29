@@ -25,7 +25,7 @@ export interface Stat {
 export const stats: Stat[] = [
     {
         id: 'years',
-        value: 20,
+        value: 8,
         suffix: '+',
         labelKey: 'stats.years.label',
         descriptionKey: 'stats.years.description'
@@ -36,13 +36,6 @@ export const stats: Stat[] = [
         suffix: '+',
         labelKey: 'stats.technologies.label',
         descriptionKey: 'stats.technologies.description'
-    },
-    {
-        id: 'mentored',
-        value: 30,
-        suffix: '+',
-        labelKey: 'stats.mentored.label',
-        descriptionKey: 'stats.mentored.description'
     },
     {
         id: 'coffees',

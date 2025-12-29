@@ -4,7 +4,7 @@ export const profileCode = `const developer = {
   birthDate: new Date(1995, 05, 09) // May 9, 1995
   role: 'Full-Stack Developer',
   location: 'Tottori, Japan',
-  experience: '7+ years',
+  experience: '8+ years',
   email: 'passionmax22@gmail.com',
   availability: 'Open to opportunities, Remote work preferred',
   hardWorker: true,

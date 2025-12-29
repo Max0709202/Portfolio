@@ -11,30 +11,22 @@ export interface ContactData {
     social: {
         github: string;
         linkedin: string;
-        fiverr: string;
-        upwork: string;
         whatsapp: string;
         mail: string;
-        buymeacoffee: string;
         discord: string;
-        x: string;
     };
 }
 
 export const contact: ContactData = {
-    email: 'hello@qazuor.com',
+    email: 'passionmax22@gmail.com',
     phone: '+54 3442 453797',
     location: 'Concepción del Uruguay, Entre Ríos, Argentina',
     address: 'Ruta 39 km 142, Lote 19, Concepcion del Uruguay, Entre Ríos, Argentina',
     social: {
-        github: 'https://github.com/qazuor',
-        linkedin: 'https://linkedin.com/in/qazuor',
-        fiverr: 'https://www.fiverr.com/sellers/leandroasrilevi/',
-        upwork: 'https://www.upwork.com/freelancers/~01881c38344e9431d7',
-        whatsapp: 'https://wa.me/543442453797',
-        mail: 'mailto:hello@qazuor.com',
-        buymeacoffee: 'https://buymeacoffee.com/qazuor',
-        discord: 'https://discord.com/users/799697279854051369',
-        x: 'https://x.com/qazuor'
+        github: 'https://github.com/Max0709202',
+        linkedin: 'https://www.linkedin.com/in/nishida3149559',
+        whatsapp: 'https://wa.me/8107024786494',
+        mail: 'mailto:passionmax22@gmail.com',
+        discord: 'ID : noriaki0206'
     }
 };

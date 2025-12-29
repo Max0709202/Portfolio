@@ -29,7 +29,7 @@ images:
   - ./_images/qazuor.com/3.png
   - ./_images/qazuor.com/4.png
 mainImage: ./_images/qazuor.com/1.png
-githubUrl: https://github.com/qazuor/qazuor.com
+githubUrl: https://github.com/Max0709202/qazuor.com
 demoUrl: https://qazuor.com
 featured: true
 publishDate: 2025-12-01

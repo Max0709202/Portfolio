@@ -27,7 +27,7 @@ technologies:
 images:
   - ./_images/bookmind/placeholder.jpg
 mainImage: ./_images/bookmind/placeholder.jpg
-githubUrl: https://github.com/qazuor/Bookmind
+githubUrl: https://github.com/Max0709202/Bookmind
 demoUrl: https://bookmind-two.vercel.app
 featured: false
 publishDate: 2025-12-01

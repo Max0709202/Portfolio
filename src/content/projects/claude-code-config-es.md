@@ -25,7 +25,7 @@ images:
   - ./_images/claudeCodeConfig/9.png
   - ./_images/claudeCodeConfig/10.png
 mainImage: ./_images/claudeCodeConfig/1.png
-githubUrl: https://github.com/qazuor/claude-code-config
+githubUrl: https://github.com/Max0709202/claude-code-config
 npmUrl: https://www.npmjs.com/package/@qazuor/claude-code-config
 featured: true
 publishDate: 2025-12-11

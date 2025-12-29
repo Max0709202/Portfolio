@@ -27,7 +27,7 @@ images:
   - ./_images/zodsmith/2.png
   - ./_images/zodsmith/3.png
 mainImage: ./_images/zodsmith/1.png
-githubUrl: https://github.com/qazuor/zodsmith-builder
+githubUrl: https://github.com/Max0709202/zodsmith-builder
 demoUrl: https://qazuzor-zodsmith-builder.vercel.app
 featured: true
 publishDate: 2025-11-26

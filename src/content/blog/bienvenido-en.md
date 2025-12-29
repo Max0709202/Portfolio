@@ -71,8 +71,8 @@ Some projects I'm working on:
 
 - [**Hospeda**](/en/projects/hospeda) — Tourism platform for the Argentine
   Litoral, with tools for hosts and AI integration.
-- [**Asistia**](https://github.com/qazuor/asistia) — _Multi-tenant_ system of
-  conversational AI agents, ready for multiple channels and integrations.
+- [**Asistia**](https://github.com/Max0709202/asistia) — _Multi-tenant_ system
+  of conversational AI agents, ready for multiple channels and integrations.
 - [**Claude Code Config**](/en/projects/claude-code-config) — CLI to configure
   projects with Claude Code: agents, _skills_, commands, MCP servers.
 - [**BookMind**](/en/projects/bookmind) — _Bookmark_ manager with automatic AI
@@ -148,8 +148,8 @@ _snippets_, _tricks_, and useful resources I've collected.
 If you want to talk about a project, have an idea you want to bring to life, or
 just want to say hi:
 
-- **GitHub**: [@qazuor](https://github.com/qazuor)
-- **LinkedIn**: [Noriaki Nishida](https://linkedin.com/in/qazuor)
+- **GitHub**: [@qazuor](https://github.com/Max0709202)
+- **LinkedIn**: [Noriaki Nishida](https://www.linkedin.com/in/nishida3149559)
 - **Email**: From the [contact section](/en/contact)
 
 And if you're looking for someone to help you build a digital product, design

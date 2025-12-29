@@ -14,8 +14,6 @@ Cada red social tiene su propio componente para mayor modularidad:
 
 - `GitHubLink.astro` - Para enlaces de GitHub
 - `LinkedInLink.astro` - Para enlaces de LinkedIn
-- `FiverrLink.astro` - Para enlaces de Fiverr
-- `UpworkLink.astro` - Para enlaces de Upwork
 
 ### Contenedor: `SocialLinks.astro`
 

@@ -214,7 +214,7 @@ git commit -m "docs: add new-doc documentation"
 
 # 7. Push and verify CI
 git push origin main
-# Check: https://github.com/qazuor/hospeda/actions
+# Check: https://github.com/Max0709202/hospeda/actions
 ```text
 
 ---
@@ -441,7 +441,7 @@ GitHub Actions validates documentation on push:
 5. Broken links
 6. File counts
 
-**Badge**: [![Documentation Validation](https://github.com/qazuor/hospeda/actions/workflows/validate-docs.yml/badge.svg)](https://github.com/qazuor/hospeda/actions/workflows/validate-docs.yml)
+**Badge**: [![Documentation Validation](https://github.com/Max0709202/hospeda/actions/workflows/validate-docs.yml/badge.svg)](https://github.com/Max0709202/hospeda/actions/workflows/validate-docs.yml)
 
 ### Scheduled Tasks
 

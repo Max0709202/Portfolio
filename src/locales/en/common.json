@@ -419,21 +419,15 @@
             "copyUrl": "Copy current URL",
             "showHelp": "Show this help dialog",
             "github": "Open GitHub profile",
-            "linkedin": "Open LinkedIn profile",
-            "fiverr": "Open Fiverr profile",
-            "upwork": "Open Upwork profile"
+            "linkedin": "Open LinkedIn profile"
         }
     },
     "aria": {
         "github": "Visit my GitHub profile",
         "linkedin": "Connect on LinkedIn",
-        "fiverr": "Hire me on Fiverr",
-        "upwork": "Hire me on Upwork",
         "whatsapp": "Chat on WhatsApp",
         "mail": "Send me an email",
-        "buymeacoffee": "Buy me a coffee",
         "discord": "Connect on Discord",
-        "x": "Follow me on X (Twitter)",
         "toggleTheme": "Toggle theme",
         "scrollToTop": "Scroll to top",
         "toggleMenu": "Toggle navigation menu",
@@ -457,8 +451,6 @@
     "social": {
         "github": "GitHub",
         "linkedin": "LinkedIn",
-        "fiverr": "Fiverr",
-        "upwork": "Upwork",
         "followMe": "Follow me on",
         "share": {
             "title": "Share this article",

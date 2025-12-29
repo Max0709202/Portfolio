@@ -15,7 +15,7 @@ technologies: [React, TypeScript, Vitest]
 images:
   - ./_images/reactCustomHooks/1.png
 mainImage: ./_images/reactCustomHooks/1.png
-githubUrl: https://github.com/qazuor/reactCustomHooks
+githubUrl: https://github.com/Max0709202/reactCustomHooks
 npmUrl: https://www.npmjs.com/package/@qazuor/react-hooks
 featured: false
 publishDate: 2025-04-01

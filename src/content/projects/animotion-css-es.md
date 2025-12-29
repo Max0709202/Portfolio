@@ -19,7 +19,7 @@ images:
   - ./_images/animotion-css/2.png
   - ./_images/animotion-css/3.png
 mainImage: ./_images/animotion-css/1.png
-githubUrl: https://github.com/qazuor/animotion-css
+githubUrl: https://github.com/Max0709202/animotion-css
 demoUrl: https://qazuor-animotion-css.vercel.app
 featured: true
 publishDate: 2025-11-25

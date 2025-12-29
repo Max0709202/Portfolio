@@ -1,11 +1,11 @@
 export const profileCode = `const desarrollador = {
-  nickName: 'qazuor',
+  nickName: 'Max0709202',
   fullNameL: 'Noriaki Nishida',
   birthDate: new Date(1980, 2, 27) // 27 de Marzo, 1980
   rol: 'Desarrollador Full-Stack',
   ubicacion: 'Entre Ríos, Argentina',
   experiencia: '20+ años',
-  email: 'hello@qazuor.com',
+  email: 'passionmax22@gmail.com',
   disponibilidad: 'Abierto a oportunidades, Trabajo remoto preferido',
   trabajadorDuro: true,
   aprendizajeRapido: true,

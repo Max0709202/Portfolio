@@ -15,7 +15,7 @@ technologies: [Astro, React, Tailwind CSS, Drizzle ORM, PostgreSQL, TypeScript]
 images:
   - ./_images/gemfolio/placeholder.jpg
 mainImage: ./_images/gemfolio/placeholder.jpg
-githubUrl: https://github.com/qazuor/Gemfolio
+githubUrl: https://github.com/Max0709202/Gemfolio
 featured: true
 publishDate: 2025-12-15
 order: 9

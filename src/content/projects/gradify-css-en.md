@@ -17,7 +17,7 @@ images:
   - ./_images/gradify-css/2.png
   - ./_images/gradify-css/3.png
 mainImage: ./_images/gradify-css/1.png
-githubUrl: https://github.com/qazuor/gradify-css
+githubUrl: https://github.com/Max0709202/gradify-css
 demoUrl: https://qazuor-gradify-css.vercel.app/
 featured: true
 publishDate: 2025-11-25

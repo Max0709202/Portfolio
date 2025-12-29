@@ -2,11 +2,9 @@ import { Command } from 'cmdk';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { commandPaletteData, getShortcutForItem, keyboardShortcuts } from '@/data/commandPalette';
 import { type ContentSearchResult, useContentSearch } from '@/hooks/useContentSearch';
-import fiverrIcon from '@/icons/social/fiverr.svg?raw';
 import githubIcon from '@/icons/social/github.svg?raw';
 import linkedinIcon from '@/icons/social/linkedin.svg?raw';
 import mailIcon from '@/icons/social/mail.svg?raw';
-import upworkIcon from '@/icons/social/upwork.svg?raw';
 import whatsappIcon from '@/icons/social/whatsapp.svg?raw';
 import folderIcon from '@/icons/ui/folder.svg?raw';
 import homeIcon from '@/icons/ui/home.svg?raw';
@@ -22,8 +20,6 @@ const ICON_MAP: Record<string, string> = {
     search: searchIcon,
     github: githubIcon,
     linkedin: linkedinIcon,
-    fiverr: fiverrIcon,
-    upwork: upworkIcon,
     whatsapp: whatsappIcon,
     mail: mailIcon
 };

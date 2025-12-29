@@ -75,8 +75,8 @@ Algunos proyectos en los que estoy trabajando:
 
 - [**Hospeda**](/es/projects/hospeda) — Plataforma de turismo para el Litoral
   argentino, con herramientas para anfitriones e integración de IA.
-- [**Asistia**](https://github.com/qazuor/asistia) — Sistema _multi-tenant_ de
-  agentes conversacionales con IA, preparado para múltiples canales e
+- [**Asistia**](https://github.com/Max0709202/asistia) — Sistema _multi-tenant_
+  de agentes conversacionales con IA, preparado para múltiples canales e
   integraciones.
 - [**Claude Code Config**](/es/projects/claude-code-config) — CLI para
   configurar proyectos con Claude Code: agentes, _skills_, comandos, servidores
@@ -152,8 +152,8 @@ _snippets_, _tricks_ y recursos útiles que fui juntando.
 Si querés charlar sobre algún proyecto, tenés una idea que querés bajar a
 tierra, o simplemente querés decir hola:
 
-- **GitHub**: [@qazuor](https://github.com/qazuor)
-- **LinkedIn**: [Noriaki Nishida](https://linkedin.com/in/qazuor)
+- **GitHub**: [@qazuor](https://github.com/Max0709202)
+- **LinkedIn**: [Noriaki Nishida](https://www.linkedin.com/in/nishida3149559)
 - **Email**: Desde la [sección de contacto](/es/contact)
 
 Y si estás buscando a alguien que te ayude a construir un producto digital,

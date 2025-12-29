@@ -517,8 +517,8 @@ a valuable exercise.
 
 If anything from this post helps you, or you have questions about any specific
 implementation, [write me](/en/contact). The code is open source on
-[GitHub](https://github.com/qazuor/qazuor.com), so you can also explore the repo
-directly.
+[GitHub](https://github.com/Max0709202/qazuor.com), so you can also explore the
+repo directly.
 
 The best portfolio is one that demonstrates you can build something real, not
 just that you know how to copy tutorials.

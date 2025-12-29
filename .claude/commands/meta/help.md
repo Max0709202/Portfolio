@@ -80,7 +80,7 @@ Welcome to the Hospeda project workflow system!
 
 🔍 Search: /help --search <query>
 📖 Documentation: .claude/docs/
-🆘 Issues: https://github.com/qazuor/hospeda/issues
+🆘 Issues: https://github.com/Max0709202/hospeda/issues
 
 Select topic (1-7) or press Enter for quick start:
 ```text

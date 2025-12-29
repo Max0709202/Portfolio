@@ -174,7 +174,7 @@ export const commandPaletteData: CommandGroup[] = [
             {
                 id: 'github',
                 value: 'github profile code repository',
-                href: 'https://github.com/qazuor',
+                href: 'https://github.com/Max0709202',
                 external: true,
                 icon: 'github',
                 keywords: ['github', 'code', 'repository', 'git', 'repos'],
@@ -183,34 +183,16 @@ export const commandPaletteData: CommandGroup[] = [
             {
                 id: 'linkedin',
                 value: 'linkedin profile professional network',
-                href: 'https://linkedin.com/in/qazuor',
+                href: 'https://www.linkedin.com/in/nishida3149559',
                 external: true,
                 icon: 'linkedin',
                 keywords: ['linkedin', 'professional', 'network', 'career', 'work'],
                 label: 'LinkedIn'
             },
             {
-                id: 'fiverr',
-                value: 'fiverr freelance services gigs',
-                href: 'https://www.fiverr.com/sellers/leandroasrilevi/',
-                external: true,
-                icon: 'fiverr',
-                keywords: ['fiverr', 'freelance', 'services', 'gigs', 'work'],
-                label: 'Fiverr'
-            },
-            {
-                id: 'upwork',
-                value: 'upwork freelance platform jobs',
-                href: 'https://www.upwork.com/freelancers/~01881c38344e9431d7',
-                external: true,
-                icon: 'upwork',
-                keywords: ['upwork', 'freelance', 'platform', 'jobs', 'clients'],
-                label: 'Upwork'
-            },
-            {
                 id: 'whatsapp',
                 value: 'whatsapp chat message contact',
-                href: 'https://wa.me/543442453797',
+                href: 'https://wa.me/8107024786494',
                 external: true,
                 icon: 'whatsapp',
                 keywords: ['whatsapp', 'chat', 'message', 'contact', 'phone'],
@@ -219,7 +201,7 @@ export const commandPaletteData: CommandGroup[] = [
             {
                 id: 'mail',
                 value: 'email mail contact message',
-                href: 'mailto:hello@qazuor.com',
+                href: 'mailto:passionmax22@gmail.com',
                 external: true,
                 icon: 'mail',
                 keywords: ['email', 'mail', 'contact', 'message', 'send'],
@@ -239,20 +221,8 @@ export const keyboardShortcuts: Record<string, KeyboardShortcut> = {
     a: { type: 'navigation', href: '/#about', commandKey: true },
     '?': { type: 'action', action: 'showHelp', commandKey: true },
     c: { type: 'action', action: 'copyUrl', commandKey: true },
-    g: { type: 'navigation', href: 'https://github.com/qazuor', external: true, commandKey: true },
-    l: { type: 'navigation', href: 'https://linkedin.com/in/qazuor', external: true, commandKey: true },
-    f: {
-        type: 'navigation',
-        href: 'https://www.fiverr.com/sellers/leandroasrilevi/',
-        external: true,
-        commandKey: true
-    },
-    u: {
-        type: 'navigation',
-        href: 'https://www.upwork.com/freelancers/~01881c38344e9431d7',
-        external: true,
-        commandKey: true
-    }
+    g: { type: 'navigation', href: 'https://github.com/Max0709202', external: true, commandKey: true },
+    l: { type: 'navigation', href: 'https://www.linkedin.com/in/nishida3149559', external: true, commandKey: true }
 };
 
 // Helper function to get shortcut display text

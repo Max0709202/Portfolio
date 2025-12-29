@@ -87,9 +87,7 @@ export function HelpDialog({ isOpen, lang, onBackToCommandPalette, onClose }: He
         { key: '⌘C / Ctrl+C', description: t('helpDialog.shortcuts.copyUrl') },
         { key: '⌘? / Ctrl+?', description: t('helpDialog.shortcuts.showHelp') },
         { key: '⌘G / Ctrl+G', description: t('helpDialog.shortcuts.github') },
-        { key: '⌘L / Ctrl+L', description: t('helpDialog.shortcuts.linkedin') },
-        { key: '⌘F / Ctrl+F', description: t('helpDialog.shortcuts.fiverr') },
-        { key: '⌘U / Ctrl+U', description: t('helpDialog.shortcuts.upwork') }
+        { key: '⌘L / Ctrl+L', description: t('helpDialog.shortcuts.linkedin') }
     ];
 
     return (

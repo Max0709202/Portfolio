@@ -37,8 +37,6 @@ export interface SEOProps {
     socialLinks?: {
         github?: string;
         linkedin?: string;
-        fiverr?: string;
-        upwork?: string;
     };
 }
 
@@ -64,9 +62,7 @@ const {
     twitterHandle,
     socialLinks = {
         github: contact.social.github,
-        linkedin: contact.social.linkedin,
-        fiverr: contact.social.fiverr,
-        upwork: contact.social.upwork
+        linkedin: contact.social.linkedin
     }
 } = Astro.props;
 
@@ -150,7 +146,7 @@ const jsonLd = {
         name: author,
         jobTitle: jobTitle,
         url: Astro.site?.href,
-        sameAs: [socialLinks.github, socialLinks.linkedin, socialLinks.fiverr, socialLinks.upwork].filter(Boolean)
+        sameAs: [socialLinks.github, socialLinks.linkedin].filter(Boolean)
     })
 };
 

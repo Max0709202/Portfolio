@@ -17,7 +17,7 @@ images:
   - ./_images/reactFormToolkit/2.png
   - ./_images/reactFormToolkit/3.png
 mainImage: ./_images/reactFormToolkit/1.png
-githubUrl: https://github.com/qazuor/reactFormToolkit
+githubUrl: https://github.com/Max0709202/reactFormToolkit
 demoUrl: https://qazuor-react-form-toolkit.vercel.app/
 featured: false
 publishDate: 2025-04-10

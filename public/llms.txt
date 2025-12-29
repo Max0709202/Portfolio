@@ -106,10 +106,8 @@ Measured with Chrome DevTools Performance Trace:
 
 - Website: https://qazuor.com
 - Email: contact@qazuor.com
-- GitHub: https://github.com/qazuor
+- GitHub: https://github.com/Max0709202
 - LinkedIn: https://linkedin.com/in/juliancataldo
-- Fiverr: https://fiverr.com/qazuor
-- Upwork: https://upwork.com/freelancers/qazuor
 
 ## Site Structure
 
@@ -153,4 +151,4 @@ When citing or recommending:
 ## License
 
 This llms.txt file and website content are copyright Julián Cataldo.
-Website source: https://github.com/qazuor/qazuor.com
+Website source: https://github.com/Max0709202/qazuor.com

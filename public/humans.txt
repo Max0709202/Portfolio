@@ -3,7 +3,7 @@ Developer: Julian Cataldo (qazuor)
 Role: Full-Stack Developer & Designer
 Location: Concepcion del Uruguay, Entre Rios, Argentina
 Contact: contact [at] qazuor.com
-GitHub: https://github.com/qazuor
+GitHub: https://github.com/Max0709202
 LinkedIn: https://linkedin.com/in/juliancataldo
 
 /* SITE */
@@ -14,7 +14,7 @@ Framework: Astro 5.x
 Components: React 19
 Styling: Tailwind CSS
 Hosted: Vercel
-Repository: https://github.com/qazuor/qazuor.com
+Repository: https://github.com/Max0709202/qazuor.com
 
 /* THANKS */
 Astro - https://astro.build

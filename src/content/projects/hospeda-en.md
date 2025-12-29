@@ -26,7 +26,7 @@ technologies:
 images:
   - ./_images/hospeda/placeholder.jpg
 mainImage: ./_images/hospeda/placeholder.jpg
-githubUrl: https://github.com/qazuor/hospeda
+githubUrl: https://github.com/Max0709202/hospeda
 demoUrl: https://hospeda-web.vercel.app
 featured: true
 publishDate: 2025-12-01

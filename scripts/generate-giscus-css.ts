@@ -57,7 +57,7 @@ function generateDarkModeCSS(): string {
 
     return `/* biome-ignore-all lint/complexity/noImportantStyles: Giscus iframe requires !important to override its styles */
 /*
- * Custom Giscus Theme for qazuor.com
+ * Custom Giscus Theme for max-dev.xyz
  * Based on the site's theme color scheme
  *
  * AUTO-GENERATED FILE - DO NOT EDIT MANUALLY
@@ -400,7 +400,7 @@ function generateLightModeCSS(): string {
 
     return `/* biome-ignore-all lint/complexity/noImportantStyles: Giscus iframe requires !important to override its styles */
 /*
- * Custom Giscus Theme for qazuor.com - Light Mode
+ * Custom Giscus Theme for max-dev.xyz - Light Mode
  * Based on the site's theme color scheme
  *
  * AUTO-GENERATED FILE - DO NOT EDIT MANUALLY

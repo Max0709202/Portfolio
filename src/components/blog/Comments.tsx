@@ -13,12 +13,12 @@ const getGiscusTheme = (isDark: boolean) => {
     const fileName = isDark ? 'giscus-custom.css' : 'giscus-custom-light.css';
     if (typeof window !== 'undefined') {
         const { hostname } = window.location;
-        if (hostname === 'qazuor.com' || hostname === 'www.qazuor.com') {
-            return `https://qazuor.com/styles/${fileName}`;
+        if (hostname === 'max-dev.xyz' || hostname === 'www.max-dev.xyz') {
+            return `https://max-dev.xyz/styles/${fileName}`;
         }
         return `${window.location.origin}/styles/${fileName}`;
     }
-    return `https://qazuor.com/styles/${fileName}`;
+    return `https://max-dev.xyz/styles/${fileName}`;
 };
 
 /**

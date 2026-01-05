@@ -17,7 +17,7 @@ import GithubIcon from '@/icons/social/github.svg?raw';
 import NpmIcon from '@/icons/social/npm.svg?raw';
 import ExternalLinkIcon from '@/icons/ui/external-link.svg?raw';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { getProjectSlug } from '@/utils/projects';
+import { getProjectSlug, resolveProjectAssetUrl } from '@/utils/projects';
 
 export async function getStaticPaths() {
     const allProjects = await getCollection('projects');
@@ -52,13 +52,14 @@ const { Content } = await project.render();
 
 // Convert ImageMetadata to optimized images for React component (larger for gallery)
 const processedImages = await Promise.all(
-    project.data.images.map(async (img: ImageMetadata) => {
+    project.data.images.map(async (img: ImageMetadata | string) => {
         const optimizedImg = await getImage({
-            src: img,
+            src: typeof img === 'string' ? resolveProjectAssetUrl(img) : img,
             width: 1200,
             height: 800,
             format: 'webp'
         });
+
         return {
             src: optimizedImg.src,
             width: 1200,
@@ -111,7 +112,7 @@ const formattedDate = new Intl.DateTimeFormat(lang, {
 }).format(project.data.publishDate);
 
 // JSON-LD data
-const SITE_URL = 'https://qazuor.com';
+const SITE_URL = 'https://max-dev.xyz';
 const projectUrl = `${SITE_URL}/${lang}/projects/${getProjectSlug(project)}`;
 
 // Get first image URL for JSON-LD

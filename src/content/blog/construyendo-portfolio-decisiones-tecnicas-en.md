@@ -3,7 +3,7 @@ title:
   'Building my portfolio from scratch: technical decisions and lessons learned'
 lang: en
 excerpt:
-  'A complete journey through the development of qazuor.com: technical stack,
+  'A complete journey through the development of max-dev.xyz: technical stack,
   architecture, implemented features, real problems I encountered and how I
   solved them.'
 publishDate: 2025-11-11
@@ -102,7 +102,7 @@ shows me all the places I break.
 ### Folder structure
 
 ```
-qazuor.com/
+max-dev.xyz/
 ├── src/
 │   ├── components/          # 120+ organized components
 │   │   ├── sections/        # Page sections
@@ -517,7 +517,7 @@ a valuable exercise.
 
 If anything from this post helps you, or you have questions about any specific
 implementation, [write me](/en/contact). The code is open source on
-[GitHub](https://github.com/Max0709202/qazuor.com), so you can also explore the
+[GitHub](https://github.com/Max0709202/max-dev.xyz), so you can also explore the
 repo directly.
 
 The best portfolio is one that demonstrates you can build something real, not

@@ -13,7 +13,7 @@
  *
  * Environment variables:
  *   PAGESPEED_API_KEY - Optional API key for higher rate limits
- *   SITE_URL - Override the default URL to test (default: https://qazuor.com)
+ *   SITE_URL - Override the default URL to test (default: https://max-dev.xyz)
  *
  * The API is free to use without a key, but has rate limits.
  * With an API key, you get higher limits.
@@ -67,7 +67,7 @@ function parseArgs() {
 const cliArgs = parseArgs();
 
 // Configuration
-const SITE_URL = process.env.SITE_URL || 'https://qazuor.com';
+const SITE_URL = process.env.SITE_URL || 'https://max-dev.xyz';
 const API_KEY = process.env.PAGESPEED_API_KEY || '';
 
 // PageSpeed Insights API endpoint

@@ -8,7 +8,7 @@
  * @see https://giscus.app/
  */
 export const GISCUS_CONFIG = {
-    repo: 'qazuor/qazuor.com' as const,
+    repo: 'qazuor/max-dev.xyz' as const,
     repoId: 'R_kgDOP2JtLg',
     category: 'Blog Comments',
     categoryId: 'DIC_kwDOP2JtLs4CzSS3',

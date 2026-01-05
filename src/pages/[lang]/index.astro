@@ -22,7 +22,7 @@ import { languages } from '@/i18n/ui';
 import { getLangFromUrl, getTranslations } from '@/i18n/utils';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { getBlogPostsForLangWithFallback, getEffectiveSlug, type SupportedLang } from '@/utils/blog';
-import { getProjectSlug } from '@/utils/projects';
+import { getProjectSlug, resolveProjectAssetUrl } from '@/utils/projects';
 
 export function getStaticPaths() {
     return Object.keys(languages).map((lang) => ({
@@ -87,14 +87,14 @@ const sortedProjects = await Promise.all(
         })
         .map(async (project: CollectionEntry<'projects'>) => {
             const processedImages = await Promise.all(
-                project.data.images.map(async (img: ImageMetadata) => {
-                    // Optimize with specific dimensions for project cards (16:9 aspect ratio)
+                project.data.images.map(async (img: ImageMetadata | string) => {
                     const optimizedImg = await getImage({
-                        src: img,
+                        src: typeof img === 'string' ? resolveProjectAssetUrl(img) : img,
                         width: 800,
                         height: 450,
                         format: 'webp'
                     });
+
                     return {
                         src: optimizedImg.src,
                         width: 800,

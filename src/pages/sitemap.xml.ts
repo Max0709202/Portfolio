@@ -6,7 +6,7 @@ import { services } from '@/data/services';
 import { languages } from '@/i18n/ui';
 import { getAllUniqueSlugs } from '@/utils/blog';
 
-const SITE_URL = 'https://qazuor.com';
+const SITE_URL = 'https://max-dev.xyz';
 const LANGS = Object.keys(languages) as Array<'en' | 'es'>;
 
 interface SitemapUrl {

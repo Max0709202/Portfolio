@@ -715,7 +715,7 @@ and this project adheres to
 ### Added
 
 - **Resend email integration**: Production email sending for contact form via
-  Resend API with verified custom domain (contact@qazuor.com)
+  Resend API with verified custom domain (contact@max-dev.xyz)
 - **DNS email records**: DKIM, SPF, and DMARC records configured for email
   deliverability
 
@@ -723,7 +723,7 @@ and this project adheres to
 
 - Resend API integration with environment variables (RESEND_API_KEY,
   RESEND_FROM_EMAIL, CONTACT_EMAIL)
-- Email verification for qazuor.com domain with proper DNS records
+- Email verification for max-dev.xyz domain with proper DNS records
 
 ## [1.0.3] - 2025-12-02
 
@@ -742,7 +742,7 @@ and this project adheres to
 
 - **SEO component**: Dynamic OG image path generation based on current URL
   pattern (`/[lang]/path/og.png`)
-- **Site URL**: Updated from example.com to qazuor.com in Astro config
+- **Site URL**: Updated from example.com to max-dev.xyz in Astro config
 
 ### Technical
 

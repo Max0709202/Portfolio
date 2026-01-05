@@ -1,5 +1,5 @@
 ---
-title: qazuor.com
+title: max-dev.xyz
 description:
   Portfolio personal y blog técnico construido con Astro y React. Optimizado
   para rendimiento excepcional, accesibilidad y diseño responsive.
@@ -24,13 +24,13 @@ technologies:
     Vercel,
   ]
 images:
-  - ./_images/qazuor.com/1.png
-  - ./_images/qazuor.com/2.png
-  - ./_images/qazuor.com/3.png
-  - ./_images/qazuor.com/4.png
-mainImage: ./_images/qazuor.com/1.png
-githubUrl: https://github.com/Max0709202/qazuor.com
-demoUrl: https://qazuor.com
+  - ./_images/max-dev.xyz/1.png
+  - ./_images/max-dev.xyz/2.png
+  - ./_images/max-dev.xyz/3.png
+  - ./_images/max-dev.xyz/4.png
+mainImage: ./_images/max-dev.xyz/1.png
+githubUrl: https://github.com/Max0709202/max-dev.xyz
+demoUrl: https://max-dev.xyz
 featured: true
 publishDate: 2025-12-01
 order: 3

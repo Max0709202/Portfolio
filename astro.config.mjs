@@ -22,10 +22,11 @@ import socialBlogData from './integrations/social-blog-data.ts';
 import testimonialAvatars from './integrations/testimonial-avatars.ts';
 import themeGenerator from './integrations/theme-generator.ts';
 import timelineSpriteWatcher from './integrations/timeline-sprite-watcher/index.ts';
+import { fileURLToPath } from 'node:url';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://qazuor.com',
+    site: 'https://max-dev.xyz',
     // Static output with selective SSR via prerender = false on specific pages
     // Root / uses SSR for language detection, all other pages are static
     output: 'static',
@@ -238,7 +239,7 @@ export default defineConfig({
         assetsInclude: ['**/*.woff', '**/*.woff2'],
         resolve: {
             alias: {
-                '@': new URL('./src', import.meta.url).pathname
+                '@': fileURLToPath(new URL('./src', import.meta.url))
             }
         },
         build: {

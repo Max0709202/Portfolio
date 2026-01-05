@@ -1,12 +1,12 @@
-# Security Policy for qazuor.com
+# Security Policy for max-dev.xyz
 # https://securitytxt.org/
 
-Contact: mailto:security@qazuor.com
-Contact: https://github.com/Max0709202/qazuor.com/security/advisories/new
+Contact: mailto:security@max-dev.xyz
+Contact: https://github.com/Max0709202/max-dev.xyz/security/advisories/new
 Expires: 2026-12-31T23:59:59.000Z
 Preferred-Languages: en, es
-Canonical: https://qazuor.com/.well-known/security.txt
-Policy: https://github.com/Max0709202/qazuor.com/security/policy
+Canonical: https://max-dev.xyz/.well-known/security.txt
+Policy: https://github.com/Max0709202/max-dev.xyz/security/policy
 
 # If you discover a security vulnerability, please report it responsibly.
 # I appreciate your help in keeping this site secure.

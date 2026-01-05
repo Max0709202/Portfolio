@@ -1,15 +1,15 @@
-# robots.txt for qazuor.com
+# robots.txt for max-dev.xyz
 # Allow all crawlers to index the entire site
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://qazuor.com/sitemap.xml
+Sitemap: https://max-dev.xyz/sitemap.xml
 
 # RSS Feeds
-# English: https://qazuor.com/en/rss.xml
-# Spanish: https://qazuor.com/es/rss.xml
+# English: https://max-dev.xyz/en/rss.xml
+# Spanish: https://max-dev.xyz/es/rss.xml
 
 # Crawl delay (optional, helps reduce server load)
 Crawl-delay: 1

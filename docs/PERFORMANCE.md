@@ -2,8 +2,8 @@
 
 **Last updated:** 2025-11-24 **Status:** ✅ Implemented and validated
 
-This document details all performance optimizations implemented in qazuor.com to
-achieve optimal Core Web Vitals and lighthouse scores.
+This document details all performance optimizations implemented in max-dev.xyz
+to achieve optimal Core Web Vitals and lighthouse scores.
 
 ---
 

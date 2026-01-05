@@ -5,7 +5,7 @@ title:
 slug: 'construyendo-portfolio-decisiones-tecnicas'
 lang: es
 excerpt:
-  'Un recorrido completo por el desarrollo de qazuor.com: stack técnico,
+  'Un recorrido completo por el desarrollo de max-dev.xyz: stack técnico,
   arquitectura, features implementadas, problemas reales que encontré y cómo los
   resolví.'
 publishDate: 2025-11-11
@@ -105,7 +105,7 @@ muestra todos los lugares que rompo.
 ### Estructura de carpetas
 
 ```
-qazuor.com/
+max-dev.xyz/
 ├── src/
 │   ├── components/          # 120+ componentes organizados
 │   │   ├── sections/        # Secciones de página
@@ -521,7 +521,7 @@ un ejercicio valioso.
 
 Si algo te sirve de este post, o tenés preguntas sobre alguna implementación
 específica, [escribime](/es/contact). El código es _open source_ en
-[GitHub](https://github.com/Max0709202/qazuor.com), así que también podés
+[GitHub](https://github.com/Max0709202/max-dev.xyz), así que también podés
 explorar el repo directamente.
 
 El mejor portfolio es el que demuestra que podés construir algo real, no solo

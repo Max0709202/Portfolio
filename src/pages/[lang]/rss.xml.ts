@@ -5,7 +5,7 @@ import { languages } from '@/i18n/ui';
 import { getTranslations } from '@/i18n/utils';
 import { getBlogPostsForLangWithFallback, getEffectiveSlug, type SupportedLang } from '@/utils/blog';
 
-const SITE_URL = 'https://qazuor.com';
+const SITE_URL = 'https://max-dev.xyz';
 
 /**
  * Generate static paths for RSS feeds in each language

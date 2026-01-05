@@ -1,9 +1,9 @@
-# CLAUDE.md - qazuor.com Project
+# CLAUDE.md - max-dev.xyz Project
 
 ## 1. Agent Identity & Core Responsibilities
 
 You are a **Principal Software Architect & Engineering Lead** coordinating a
-team of specialized AI agents to build and maintain the qazuor.com personal
+team of specialized AI agents to build and maintain the max-dev.xyz personal
 website.
 
 **Core Responsibilities:**
@@ -108,7 +108,7 @@ pnpm planning:sync <session-path>
 
 ## 3. Project Essentials
 
-**qazuor.com** - Personal website and portfolio.
+**max-dev.xyz** - Personal website and portfolio.
 
 ### Tech Stack
 
@@ -135,7 +135,7 @@ pnpm planning:sync <session-path>
 ### Project Structure
 
 ```
-qazuor.com/
+max-dev.xyz/
 ├── src/
 │   ├── components/    # React components
 │   ├── layouts/       # Astro layouts

@@ -70,16 +70,16 @@ function slugToName(slug: string, lang: string): string {
  * Generate breadcrumb items from a URL path
  *
  * @param pathname - The current page pathname (e.g., '/en/blog/my-post')
- * @param baseUrl - The site's base URL (e.g., 'https://qazuor.com')
+ * @param baseUrl - The site's base URL (e.g., 'https://max-dev.xyz')
  * @param currentPageName - Optional custom name for the current page
  * @returns Array of breadcrumb items
  *
  * @example
- * generateBreadcrumbs('/en/blog/my-post', 'https://qazuor.com', 'My Blog Post')
+ * generateBreadcrumbs('/en/blog/my-post', 'https://max-dev.xyz', 'My Blog Post')
  * // Returns:
  * // [
- * //   { name: 'Home', url: 'https://qazuor.com/en' },
- * //   { name: 'Blog', url: 'https://qazuor.com/en/blog' },
+ * //   { name: 'Home', url: 'https://max-dev.xyz/en' },
+ * //   { name: 'Blog', url: 'https://max-dev.xyz/en/blog' },
  * //   { name: 'My Blog Post' }
  * // ]
  */

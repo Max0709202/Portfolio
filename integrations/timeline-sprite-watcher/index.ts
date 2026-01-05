@@ -26,6 +26,7 @@
 
 import { readdir, watch } from 'node:fs/promises';
 import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import type { AstroIntegration } from 'astro';
 
 // Vite types may have version incompatibilities between Astro's and root node_modules
@@ -66,7 +67,7 @@ export default function timelineSpriteWatcher(options: TimelineSpriteWatcherOpti
         name: 'timeline-sprite-watcher',
         hooks: {
             'astro:config:setup': async ({ config, command, updateConfig }) => {
-                projectRoot = config.root.pathname;
+                projectRoot = fileURLToPath(config.root);
 
                 // Only setup watcher in dev mode
                 if (command !== 'dev') {

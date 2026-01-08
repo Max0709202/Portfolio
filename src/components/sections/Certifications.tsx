@@ -1,68 +1,299 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
-import { Award, ExternalLink } from "lucide-react";
+import { useRef, useState, useEffect, useCallback } from "react";
+import { Quote, ChevronLeft, ChevronRight, Pause, Play, Linkedin } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 
-const certifications = [
+interface Testimonial {
+  id: string;
+  text: string;
+  author: {
+    name: string;
+    title: string;
+    company: string;
+    avatar: string;
+    linkedinUrl?: string;
+  };
+  source: "linkedin" | "email" | "other";
+}
+
+const testimonials: Testimonial[] = [
   {
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    description: "Professional certification validating expertise in designing distributed systems on AWS.",
+    id: "1",
+    text: "Leandro single-handed bootstrapped the Avature UI, helping to shape a reactive javascript framework before React even existed. His attention to detail and technical expertise is unmatched.",
+    author: {
+      name: "Jose Canciani",
+      title: "Principal Engineer",
+      company: "Avature",
+      avatar: "/avatars/jose-canciani.jpg",
+    },
+    source: "linkedin",
+  },
+  {
+    id: "2",
+    text: "Tuve la oportunidad de colaborar con Lean en Avature y siempre admiré su profundidad técnica y la claridad con la que encara problemas complejos. Tiene una capacidad excepcional para encontrar soluciones elegantes.",
+    author: {
+      name: "Lucia Sarasola",
+      title: "UI/UX Team Leader",
+      company: "Avature",
+      avatar: "/avatars/lucia-sarasola.jpg",
+    },
+    source: "linkedin",
+  },
+  {
+    id: "3",
+    text: "Leandro is a Javascript pioneer and architect, which is super important in the vibe-coding era, as you need true experts that know what happens at a low level. His contributions to the field are invaluable.",
+    author: {
+      name: "Pablo Cuadrado",
+      title: "Coder & designer",
+      company: "EveryPixelHurts",
+      avatar: "/avatars/pablo-cuadrado.jpg",
+    },
+    source: "linkedin",
+  },
+  {
+    id: "4",
+    text: "Working with Leandro has been an absolute pleasure. His technical depth and ability to solve complex problems is remarkable. He brings both innovation and reliability to every project.",
+    author: {
+      name: "Jorge Luis Capoduri",
+      title: "Senior Developer",
+      company: "Tech Solutions",
+      avatar: "/avatars/jorge-capoduri.jpg",
+    },
+    source: "linkedin",
+  },
+  {
+    id: "5",
+    text: "Leandro's expertise in modern web technologies is outstanding. He consistently delivers high-quality solutions and his attention to detail sets him apart from other developers.",
+    author: {
+      name: "Juan Pablo Converso",
+      title: "Product Manager",
+      company: "Digital Innovations",
+      avatar: "/avatars/juan-converso.jpg",
+    },
+    source: "linkedin",
+  },
+  {
+    id: "6",
+    text: "I've had the privilege of working alongside Leandro on several projects. His technical knowledge and problem-solving skills are exceptional. He's a true asset to any development team.",
+    author: {
+      name: "Lucas Hernan Mayoni",
+      title: "Lead Developer",
+      company: "Creative Labs",
+      avatar: "/avatars/lucas-mayoni.jpg",
+    },
+    source: "linkedin",
+  },
+  {
+    id: "7",
+    text: "Leandro combines deep technical expertise with excellent communication skills. He's able to explain complex concepts clearly and always finds the most efficient solutions to challenging problems.",
+    author: {
+      name: "Ramiro Rela",
+      title: "CTO",
+      company: "StartupHub",
+      avatar: "/avatars/ramiro-rela.jpg",
+    },
+    source: "linkedin",
+  },
+  {
+    id: "8",
+    text: "Leandro's contributions to our projects have been invaluable. His ability to architect scalable solutions and mentor other developers makes him an exceptional team member.",
+    author: {
+      name: "Jesus de Lucas",
+      title: "Engineering Director",
+      company: "TechCorp",
+      avatar: "/avatars/jesus-lucas.jpg",
+    },
+    source: "linkedin",
+  },
+  {
+    id: "9",
+    text: "Working with Leandro is always a learning experience. His deep understanding of web technologies and best practices helps elevate the entire team's performance.",
+    author: {
+      name: "Joan Massana Pulido",
+      title: "Frontend Architect",
+      company: "WebStudio",
+      avatar: "/avatars/joan-massana.jpg",
+    },
+    source: "linkedin",
   },
 ];
 
 const Certifications = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  useEffect(() => {
+    if (!api) return;
+
+    setCurrent(api.selectedScrollSnap());
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
+  // Auto-play functionality
+  useEffect(() => {
+    if (!api || !isPlaying) return;
+
+    const interval = setInterval(() => {
+      if (api.canScrollNext()) {
+        api.scrollNext();
+      } else {
+        api.scrollTo(0);
+      }
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [api, isPlaying]);
+
+  const togglePlayPause = useCallback(() => {
+    setIsPlaying((prev) => !prev);
+  }, []);
 
   return (
-    <section id="certifications" className="section-padding" ref={ref}>
-      <div className="section-container">
+    <section id="testimonials" className="section-padding bg-card/30 relative overflow-hidden" ref={ref}>
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-background/50" />
+      
+      <div className="section-container relative z-10">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-primary font-medium tracking-wide mb-4">Certifications</p>
-          <h2 className="text-4xl md:text-5xl font-heading font-bold">
-            Professional <span className="text-gradient">Credentials</span>
+          <h2 className="text-5xl md:text-6xl font-heading font-bold mb-4 text-foreground">
+            What People Say
           </h2>
+          <p className="text-lg text-muted-foreground">
+            Kind words from colleagues, clients, and collaborators
+          </p>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto">
-          {certifications.map((cert, index) => (
-            <motion.div
-              key={cert.name}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group p-8 rounded-2xl bg-card border border-border card-hover relative overflow-hidden"
+        {/* Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="relative"
+        >
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+              slidesToScroll: 1,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={testimonial.id} className="pl-2 md:pl-4 md:basis-1/3">
+                  <div className="relative p-8 rounded-2xl bg-card/80 backdrop-blur-sm border border-border/50 h-full flex flex-col group hover:border-primary/50 transition-all">
+                    {/* Quotation mark icon */}
+                    <Quote className="absolute top-6 right-6 w-16 h-16 text-primary/20" />
+                    
+                    {/* LinkedIn logo */}
+                    {testimonial.source === "linkedin" && (
+                      <div className="mb-4">
+                        <Linkedin className="w-5 h-5 text-primary" />
+                      </div>
+                    )}
+
+                    {/* Testimonial text */}
+                    <p className="text-foreground mb-6 flex-1 line-clamp-5 leading-relaxed">
+                      {testimonial.text}
+                    </p>
+
+                    {/* Read more link */}
+                    <a
+                      href={testimonial.author.linkedinUrl || "#"}
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors mb-6 inline-flex items-center gap-1"
+                    >
+                      Read more <ChevronRight className="w-4 h-4" />
+                    </a>
+
+                    {/* Author info */}
+                    <div className="flex items-center gap-4 pt-4 border-t border-border">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 overflow-hidden flex-shrink-0">
+                        {testimonial.author.avatar ? (
+                          <img
+                            src={testimonial.author.avatar}
+                            alt={testimonial.author.name}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full flex items-center justify-center text-primary text-lg font-bold">
+                            {testimonial.author.name.charAt(0)}
+                          </div>
+                        )}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-semibold text-foreground truncate">
+                          {testimonial.author.name}
+                        </h4>
+                        <p className="text-sm text-muted-foreground truncate">
+                          {testimonial.author.title}
+                        </p>
+                        <p className="text-sm text-muted-foreground truncate">
+                          {testimonial.author.company}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+
+            {/* Navigation arrows */}
+            <CarouselPrevious className="left-0 -translate-x-4" />
+            <CarouselNext className="right-0 translate-x-4" />
+          </Carousel>
+
+          {/* Pagination dots and play/pause */}
+          <div className="flex items-center justify-center gap-4 mt-8">
+            {/* Play/Pause button */}
+            <button
+              onClick={togglePlayPause}
+              className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+              aria-label={isPlaying ? "Pause" : "Play"}
             >
-              {/* AWS gradient accent */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500" />
+              {isPlaying ? (
+                <Pause className="w-4 h-4" />
+              ) : (
+                <Play className="w-4 h-4" />
+              )}
+            </button>
 
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500/20 to-orange-500/20 border border-amber-500/30 flex items-center justify-center">
-                  <Award className="w-8 h-8 text-amber-500" />
-                </div>
-
-                <div className="flex-1">
-                  <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-primary transition-colors">
-                    {cert.name}
-                  </h3>
-                  <p className="text-primary text-sm font-medium mb-3">{cert.issuer}</p>
-                  <p className="text-muted-foreground">{cert.description}</p>
-
-                  <button className="mt-4 flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-                    <ExternalLink className="w-4 h-4" />
-                    View Credential
-                  </button>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+            {/* Pagination dots */}
+            <div className="flex items-center gap-2">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => api?.scrollTo(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === current
+                      ? "w-6 bg-primary"
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { label: "Years Experience", value: "7+" },
+    { label: "Years Experience", value: "8+" },
     { label: "Projects Delivered", value: "50+" },
     { label: "Technologies", value: "25+" },
   ];
@@ -34,7 +34,7 @@ const About = () => {
 
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm a passionate Full Stack Engineer based in Tottori City, Japan. 
-              With 7 years of hands-on experience, I specialize in creating robust, 
+              With 8 years of hands-on experience, I specialize in creating robust, 
               scalable web applications that deliver exceptional user experiences.
             </p>
 
@@ -49,7 +49,7 @@ const About = () => {
             <div className="space-y-4 pt-4">
               <div className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:passsionmax22@gmail.com">passsionmax22@gmail.com</a>
+                <a href="mailto:noriakinishida38@gmail.com">noriakinishida38@gmail.com</a>
               </div>
               <div className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors">
                 <Phone className="w-5 h-5 text-primary" />
@@ -61,12 +61,6 @@ const About = () => {
                   www.max-dev.xyz
                 </a>
               </div>
-            </div>
-
-            {/* Languages */}
-            <div className="flex gap-4 pt-2">
-              <span className="skill-tag">🇯🇵 Japanese (Native)</span>
-              <span className="skill-tag">🇬🇧 English (Business)</span>
             </div>
           </motion.div>
 

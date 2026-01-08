@@ -1,4 +1,5 @@
 import Navbar from "@/components/layout/Navbar";
+import Sidebar from "@/components/layout/Sidebar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
@@ -7,12 +8,13 @@ import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import Certifications from "@/components/sections/Certifications";
 import Education from "@/components/sections/Education";
-import Contact from "@/components/sections/Contact";
+import Services from "@/components/sections/Services";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
+      <Sidebar />
       <main>
         <Hero />
         <div className="divider" />
@@ -22,7 +24,7 @@ const Index = () => {
         <Projects />
         <Certifications />
         <Education />
-        <Contact />
+        <Services />
       </main>
       <Footer />
     </div>

@@ -11,8 +11,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "passsionmax22@gmail.com",
-      href: "mailto:passsionmax22@gmail.com",
+      value: "noriakinishida38@gmail.com",
+      href: "mailto:noriakinishida38@gmail.com",
     },
     {
       icon: Phone,
@@ -90,7 +90,7 @@ const Contact = () => {
             className="text-center"
           >
             <a
-              href="mailto:passsionmax22@gmail.com"
+              href="mailto:noriakinishida38@gmail.com"
               className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 text-lg"
             >
               <Send className="w-5 h-5" />

@@ -1,7 +1,27 @@
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, MapPin } from "lucide-react";
+import { ArrowDown, MapPin, Linkedin, Github, Mail, MessageCircle, Send, ChevronDown, FileText } from "lucide-react";
 
 const Hero = () => {
+  const [isResumeDropdownOpen, setIsResumeDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsResumeDropdownOpen(false);
+      }
+    };
+
+    if (isResumeDropdownOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isResumeDropdownOpen]);
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden">
       {/* Background gradient */}
@@ -11,88 +31,228 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:100px_100px]" />
       
       <div className="section-container relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-8"
-        >
-          {/* Greeting */}
-          <motion.p
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-primary font-medium tracking-wide"
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Left Column: Text Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="space-y-8 order-2 lg:order-1"
           >
-            こんにちは — Hello
-          </motion.p>
-
-          {/* Name */}
-          <div className="space-y-4">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tight"
+            {/* Greeting */}
+            <motion.p
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="text-primary font-medium tracking-wide"
             >
-              Noriaki{" "}
-              <span className="text-gradient">Nishida</span>
-            </motion.h1>
+              こんにちは — Hello
+            </motion.p>
 
-            <motion.h2
+            {/* Name */}
+            <div className="space-y-4">
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tight"
+              >
+                Noriaki{" "}
+                <span className="text-gradient">Nishida</span>
+              </motion.h1>
+
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="text-2xl md:text-3xl lg:text-4xl font-heading text-muted-foreground font-medium"
+              >
+                Full Stack Engineer
+              </motion.h2>
+            </div>
+
+            {/* Description */}
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-2xl md:text-3xl lg:text-4xl font-heading text-muted-foreground font-medium"
+              transition={{ delay: 0.7, duration: 0.8 }}
+              className="max-w-xl text-lg text-muted-foreground leading-relaxed"
             >
-              Full Stack Engineer
-            </motion.h2>
-          </div>
+              Passionate and detail-oriented engineer with 8 years of experience 
+              in developing robust and scalable web applications. Proficient in 
+              modern frontend and backend technologies.
+            </motion.p>
 
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="max-w-xl text-lg text-muted-foreground leading-relaxed"
-          >
-            Passionate and detail-oriented engineer with 7 years of experience 
-            in developing robust and scalable web applications. Proficient in 
-            modern frontend and backend technologies.
-          </motion.p>
+            {/* Location */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9, duration: 0.6 }}
+              className="flex items-center gap-2 text-muted-foreground"
+            >
+              <MapPin className="w-4 h-4 text-primary" />
+              <span>Tottori City, Japan</span>
+            </motion.div>
 
-          {/* Location */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.6 }}
-            className="flex items-center gap-2 text-muted-foreground"
-          >
-            <MapPin className="w-4 h-4 text-primary" />
-            <span>Tottori City, Japan</span>
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.1, duration: 0.6 }}
+              className="flex items-center gap-3 pt-4 flex-nowrap"
+            >
+              <a
+                href="#contact"
+                className="px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 whitespace-nowrap text-sm md:text-base"
+              >
+                Get in Touch
+              </a>
+              <a
+                href="#projects"
+                className="px-6 py-3 border border-border text-foreground font-medium rounded-lg hover:border-primary/50 hover:text-primary transition-all duration-300 whitespace-nowrap text-sm md:text-base"
+              >
+                View Projects
+              </a>
+              
+              {/* Resume Dropdown Button */}
+              <div className="relative flex-shrink-0" ref={dropdownRef}>
+                <button
+                  onClick={() => setIsResumeDropdownOpen(!isResumeDropdownOpen)}
+                  className="px-6 py-3 border border-border text-foreground font-medium rounded-lg hover:border-primary/50 hover:text-primary transition-all duration-300 flex items-center gap-2 whitespace-nowrap text-sm md:text-base"
+                >
+                  <FileText className="w-4 h-4 flex-shrink-0" />
+                  <span>Resume</span>
+                  <ChevronDown 
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${isResumeDropdownOpen ? 'rotate-180' : ''}`} 
+                  />
+                </button>
+
+                {/* Dropdown Menu */}
+                {isResumeDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-lg overflow-hidden z-50"
+                  >
+                    <a
+                      href="/resume-english.pdf"
+                      download
+                      onClick={() => setIsResumeDropdownOpen(false)}
+                      className="block px-4 py-3 text-foreground hover:bg-primary/10 hover:text-primary transition-colors duration-200 border-b border-border last:border-b-0"
+                    >
+                      English
+                    </a>
+                    <a
+                      href="/resume-japanese.pdf"
+                      download
+                      onClick={() => setIsResumeDropdownOpen(false)}
+                      className="block px-4 py-3 text-foreground hover:bg-primary/10 hover:text-primary transition-colors duration-200"
+                    >
+                      Japanese (日本語)
+                    </a>
+                  </motion.div>
+                )}
+              </div>
+            </motion.div>
+
+            {/* Social Media Icons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.3, duration: 0.6 }}
+              className="flex items-center gap-4 pt-2"
+            >
+              <a
+                href="https://www.linkedin.com/in/nishida3149559/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 hover:scale-110"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://github.com/Max0709202"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 hover:scale-110"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+              <a
+                href="mailto:noriakinishida38@gmail.com"
+                aria-label="Email"
+                className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 hover:scale-110"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+              <a
+                href="https://wa.me/817024786494"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 hover:scale-110"
+              >
+                <MessageCircle className="w-5 h-5" />
+              </a>
+              <a
+                href="https://t.me/@nishida_N"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+                className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 hover:scale-110"
+              >
+                <Send className="w-5 h-5" />
+              </a>
+            </motion.div>
           </motion.div>
 
-          {/* CTA Buttons */}
+          {/* Right Column: Photo */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
-            className="flex flex-wrap gap-4 pt-4"
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
+            className="flex justify-center lg:justify-end order-1 lg:order-2"
           >
-            <a
-              href="#contact"
-              className="px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
-            >
-              Get in Touch
-            </a>
-            <a
-              href="#projects"
-              className="px-8 py-4 border border-border text-foreground font-medium rounded-lg hover:border-primary/50 hover:text-primary transition-all duration-300"
-            >
-              View Projects
-            </a>
+            <div className="relative w-full max-w-md lg:max-w-lg">
+              {/* Decorative background circle */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-primary/10 to-transparent rounded-full blur-3xl transform scale-110" />
+              
+              {/* Photo container */}
+              <motion.div
+                initial={{ scale: 0.9 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
+                className="relative rounded-2xl overflow-hidden border border-border/50 shadow-2xl bg-card/50 backdrop-blur-sm"
+              >
+                <img
+                  src="/avatar.png"
+                  alt="Noriaki Nishida"
+                  className="w-full h-auto object-cover aspect-square"
+                  loading="eager"
+                />
+                
+                {/* Gradient overlay for depth */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent pointer-events-none" />
+              </motion.div>
+
+              {/* Floating decoration elements */}
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-xl"
+              />
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/5 rounded-full blur-2xl"
+              />
+            </div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Scroll indicator */}

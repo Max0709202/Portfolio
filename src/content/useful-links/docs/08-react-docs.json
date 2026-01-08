@@ -1,8 +1,0 @@
-{
-    "name": "React Docs",
-    "description_en": "Official modern React documentation with guides and interactive examples.",
-    "description_es": "Documentación oficial de React moderno, con guías y ejemplos interactivos.",
-    "url": "https://react.dev/",
-    "category": "docs",
-    "tags": ["docs", "react", "ui", "frontend"]
-}

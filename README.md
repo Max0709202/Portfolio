@@ -1,91 +1,73 @@
-# max-dev.xyz
+# Welcome to your Lovable project
 
-Personal portfolio and technical blog built with Astro, React, and TailwindCSS.
+## Project info
 
-## Performance Metrics
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-This project is optimized for Core Web Vitals and achieves excellent performance
-scores:
+## How can I edit this code?
 
-| Metric            | Target  | Current | Status           |
-| ----------------- | ------- | ------- | ---------------- |
-| LCP               | < 2.5s  | ~271ms  | Excellent        |
-| FCP               | < 1.8s  | ~271ms  | Excellent        |
-| CLS               | < 0.1   | 0.00    | Excellent        |
-| DOM Elements      | < 2000  | 1655    | 17% under budget |
-| JS Bundle (gzip)  | < 500KB | 308KB   | 38% under budget |
-| CSS Bundle (gzip) | < 100KB | 40KB    | 60% under budget |
+There are several ways of editing your application.
 
-### Performance Optimizations
+**Use Lovable**
 
-- Critical CSS inlined for instant hero render
-- Font preloading (3 critical fonts with `font-display: swap`)
-- LCP image preloaded with `fetchpriority="high"`
-- SVG sprite for timeline icons (99.3% reduction: 393KB to 2.6KB)
-- Manual chunking for optimal caching
-- Lazy loading with `client:visible` for below-fold components
-- Brotli/Gzip/Zstd compression
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-## Tech Stack
+Changes made via Lovable will be committed automatically to this repo.
 
-- **Framework:** Astro (SSG)
-- **UI Components:** React 19 (Islands Architecture)
-- **Styling:** TailwindCSS
-- **Animations:** GSAP + Lenis
-- **Content:** Astro Content Collections
-- **Language:** TypeScript
-- **Deployment:** Vercel
+**Use your preferred IDE**
 
-## Project Structure
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-```text
-max-dev.xyz/
-├── src/
-│   ├── components/       # React components (islands)
-│   ├── layouts/          # Astro layouts
-│   ├── pages/            # Astro pages (routes)
-│   ├── content/          # Content collections (blog, projects)
-│   ├── styles/           # Global styles and fonts
-│   ├── i18n/             # Internationalization (en/es)
-│   └── icons/            # SVG icons
-├── public/               # Static assets
-├── docs/                 # Project documentation
-└── .claude/              # AI agents, commands, skills
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-## Commands
+**Edit a file directly in GitHub**
 
-| Command              | Action                               |
-| :------------------- | :----------------------------------- |
-| `npm install`        | Install dependencies                 |
-| `npm run dev`        | Start dev server at `localhost:4321` |
-| `npm run build`      | Build production site to `./dist/`   |
-| `npm run preview`    | Preview production build locally     |
-| `npm run typecheck`  | Run TypeScript type checking         |
-| `npm run lint`       | Lint code                            |
-| `npm run test`       | Run tests                            |
-| `npm run lighthouse` | Run Lighthouse audit                 |
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## Features
+**Use GitHub Codespaces**
 
-- Bilingual support (English/Spanish)
-- Dark mode (default)
-- View Transitions API for smooth navigation
-- Command Palette (Ctrl+K)
-- Accessible (WCAG 2.1 Level AA)
-- SEO optimized with structured data
-- PWA ready with web manifest
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## Documentation
+## What technologies are used for this project?
 
-- [Changelog](CHANGELOG.md) - Version history and release notes
+This project is built with:
 
-For detailed technical documentation, see the [docs](docs/) folder:
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-- [Performance Optimization](docs/PERFORMANCE.md) - Core Web Vitals optimization
-  guide
-- [Color System](docs/COLOR-SYSTEM.md) - Automated color interpolation system
+## How can I deploy this project?
 
-## License
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-MIT
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

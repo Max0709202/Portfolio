@@ -1,19 +1,14 @@
-# robots.txt for max-dev.xyz
-# Allow all crawlers to index the entire site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
 
 User-agent: *
 Allow: /
-
-# Sitemap
-Sitemap: https://max-dev.xyz/sitemap.xml
-
-# RSS Feeds
-# English: https://max-dev.xyz/en/rss.xml
-# Spanish: https://max-dev.xyz/es/rss.xml
-
-# Crawl delay (optional, helps reduce server load)
-Crawl-delay: 1
-
-# Disallow admin or private areas if they exist in the future
-# Disallow: /admin/
-# Disallow: /private/

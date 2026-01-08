@@ -1,8 +1,0 @@
-{
-    "name": "TypeScript Docs",
-    "description_en": "Official TypeScript documentation, from basics to advanced types.",
-    "description_es": "Documentación oficial de TypeScript, desde básicos hasta tipos avanzados.",
-    "url": "https://www.typescriptlang.org/docs/",
-    "category": "docs",
-    "tags": ["docs", "typescript", "ts"]
-}

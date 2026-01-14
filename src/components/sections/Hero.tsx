@@ -1,6 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, MapPin, Linkedin, Github, Mail, MessageCircle, Send, ChevronDown, FileText } from "lucide-react";
+import resumeEnglish from "./resume-english.pdf";
+import resumeJapanese from "./resume-japanese.pdf";
 
 const Hero = () => {
   const [isResumeDropdownOpen, setIsResumeDropdownOpen] = useState(false);
@@ -22,6 +24,29 @@ const Hero = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isResumeDropdownOpen]);
+
+  // Download handler functions
+  const handleDownloadEnglish = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.href = resumeEnglish;
+    link.download = "resume-english.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setIsResumeDropdownOpen(false);
+  };
+
+  const handleDownloadJapanese = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.href = resumeJapanese;
+    link.download = "resume-japanese.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setIsResumeDropdownOpen(false);
+  };
   return (
     <section className="min-h-screen flex flex-col justify-center relative overflow-hidden">
       {/* Background gradient */}
@@ -137,17 +162,15 @@ const Hero = () => {
                     className="absolute top-full left-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-lg overflow-hidden z-50"
                   >
                     <a
-                      href="/resume-english.pdf"
-                      download
-                      onClick={() => setIsResumeDropdownOpen(false)}
+                      href="#"
+                      onClick={handleDownloadEnglish}
                       className="block px-4 py-3 text-foreground hover:bg-primary/10 hover:text-primary transition-colors duration-200 border-b border-border last:border-b-0"
                     >
                       English
                     </a>
                     <a
-                      href="/resume-japanese.pdf"
-                      download
-                      onClick={() => setIsResumeDropdownOpen(false)}
+                      href="#"
+                      onClick={handleDownloadJapanese}
                       className="block px-4 py-3 text-foreground hover:bg-primary/10 hover:text-primary transition-colors duration-200"
                     >
                       Japanese (日本語)
@@ -231,7 +254,7 @@ const Hero = () => {
                 <img
                   src="/avatar.png"
                   alt="Noriaki Nishida"
-                  className="w-full h-auto object-cover aspect-square"
+                  className="w-full h-full object-cover aspect-[3/4] scale-110 object-center"
                   loading="eager"
                 />
                 

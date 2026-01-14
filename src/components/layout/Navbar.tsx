@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
+import logo from "@/images/logo.png";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -64,8 +65,12 @@ const Navbar = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="text-xl font-heading font-bold">
-            N<span className="text-primary">.</span>
+          <a href="#" className="flex items-center gap-2">
+            <img
+              src={logo}
+              alt="Noriaki Nishida"
+              className="h-10 w-auto rounded-full border border-border/60 shadow-sm"
+            />
           </a>
 
           {/* Desktop Navigation */}

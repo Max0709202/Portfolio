@@ -9,24 +9,28 @@ const projects = [
     description: "A full-featured online shopping platform with real-time inventory management, payment integration, and admin dashboard.",
     tech: ["React", "Node.js", "MongoDB", "Stripe", "Redis"],
     gradient: "from-primary/20 to-primary/5",
+    image: "/src/images/projects/ecommerce.png", // Add image path here, e.g., "/images/projects/ecommerce.jpg"
   },
   {
     title: "Task Management System",
     description: "Collaborative project management tool with real-time updates, team workspaces, and automated workflow features.",
     tech: ["Vue.js", "Express", "PostgreSQL", "Socket.io", "Docker"],
     gradient: "from-blue-500/20 to-blue-500/5",
+    image: "/src/images/projects/task-management.png", // Add image path here, e.g., "/images/projects/task-management.jpg"
   },
   {
-    title: "Healthcare Dashboard",
+    title: "Healthcare Platform",
     description: "Analytics dashboard for healthcare providers featuring patient data visualization and appointment scheduling.",
     tech: ["React", "TypeScript", "GraphQL", "AWS", "D3.js"],
     gradient: "from-emerald-500/20 to-emerald-500/5",
+    image: "/src/images/projects/healthcare.png", // Add image path here, e.g., "/images/projects/healthcare.jpg"
   },
   {
     title: "Real Estate Portal",
     description: "Property listing platform with advanced search filters, virtual tours, and integrated CRM functionality.",
     tech: ["Next.js", "Python", "Django", "MySQL", "Google Maps"],
     gradient: "from-amber-500/20 to-amber-500/5",
+    image: "/src/images/projects/real-estate.png", // Add image path here, e.g., "/images/projects/real-estate.jpg"
   },
 ];
 
@@ -61,7 +65,20 @@ const Projects = () => {
               {/* Gradient overlay */}
               <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
 
-              <div className="relative p-8">
+              {/* Project Image */}
+              {project.image && (
+                <div className="relative w-full h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+                </div>
+              )}
+
+              <div className="relative p-8" style={{ paddingBottom: '0px' }}>
                 <h3 className="text-2xl font-heading font-bold mb-4 group-hover:text-primary transition-colors duration-300">
                   {project.title}
                 </h3>
@@ -80,18 +97,6 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
-
-                {/* Links */}
-                <div className="flex gap-4">
-                  <button className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300">
-                    <Github className="w-5 h-5" />
-                    <span>View Code</span>
-                  </button>
-                  <button className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors duration-300">
-                    <ExternalLink className="w-5 h-5" />
-                    <span>Live Demo</span>
-                  </button>
                 </div>
               </div>
             </motion.div>

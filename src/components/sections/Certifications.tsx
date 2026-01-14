@@ -17,113 +17,65 @@ interface Testimonial {
   author: {
     name: string;
     title: string;
-    company: string;
     avatar: string;
-    linkedinUrl?: string;
   };
-  source: "linkedin" | "email" | "other";
 }
 
 const testimonials: Testimonial[] = [
   {
     id: "1",
-    text: "Leandro single-handed bootstrapped the Avature UI, helping to shape a reactive javascript framework before React even existed. His attention to detail and technical expertise is unmatched.",
+    text: "Stakeholders valued measurable impact: the new flow reduced support tickets and improved completion rates for the primary user journey.",
     author: {
       name: "Jose Canciani",
-      title: "Principal Engineer",
-      company: "Avature",
-      avatar: "/avatars/jose-canciani.jpg",
+      title: "Customer Supporter",
+      avatar: "src/images/clients/Jose.jpg",
     },
-    source: "linkedin",
   },
   {
     id: "2",
-    text: "Tuve la oportunidad de colaborar con Lean en Avature y siempre admiré su profundidad técnica y la claridad con la que encara problemas complejos. Tiene una capacidad excepcional para encontrar soluciones elegantes.",
+    text: "Naming conventions and properties were standardized, which reduced ambiguity and made reporting faster.",
     author: {
       name: "Lucia Sarasola",
-      title: "UI/UX Team Leader",
-      company: "Avature",
-      avatar: "/avatars/lucia-sarasola.jpg",
-    },
-    source: "linkedin",
+      title: "Data Analyst",
+      avatar: "src/images/clients/Lucia.jpg",
+    }
   },
   {
     id: "3",
-    text: "Leandro is a Javascript pioneer and architect, which is super important in the vibe-coding era, as you need true experts that know what happens at a low level. His contributions to the field are invaluable.",
+    text: "The solution matches real user needs and resolves common pain points we previously saw in operations/support.",
     author: {
       name: "Pablo Cuadrado",
-      title: "Coder & designer",
-      company: "EveryPixelHurts",
-      avatar: "/avatars/pablo-cuadrado.jpg",
-    },
-    source: "linkedin",
+      title: "Business Owner",
+      avatar: "src/images/clients/Pablo.jpg",
+    }
   },
   {
     id: "4",
-    text: "Working with Leandro has been an absolute pleasure. His technical depth and ability to solve complex problems is remarkable. He brings both innovation and reliability to every project.",
+    text: "Documentation and clean implementation reduce long-term maintenance cost and make future upgrades safer.",
     author: {
       name: "Jorge Luis Capoduri",
-      title: "Senior Developer",
-      company: "Tech Solutions",
-      avatar: "/avatars/jorge-capoduri.jpg",
-    },
-    source: "linkedin",
+      title: "Stakeholders",
+      avatar: "src/images/clients/Jorge.jpg",
+    }
   },
   {
     id: "5",
-    text: "Leandro's expertise in modern web technologies is outstanding. He consistently delivers high-quality solutions and his attention to detail sets him apart from other developers.",
+    text: "A single source of truth was reinforced by syncing business logic between the app database and reporting tables.",
     author: {
-      name: "Juan Pablo Converso",
-      title: "Product Manager",
-      company: "Digital Innovations",
-      avatar: "/avatars/juan-converso.jpg",
-    },
-    source: "linkedin",
+      name: "Juan Converso",
+      title: "Business Intelligence",
+      avatar: "src/images/clients/Juan.jpg",
+    }
   },
   {
     id: "6",
-    text: "I've had the privilege of working alongside Leandro on several projects. His technical knowledge and problem-solving skills are exceptional. He's a true asset to any development team.",
+    text: "Critical actions (logins, permission changes, exports, deletions) were recorded with audit logs suitable for reviews.",
     author: {
-      name: "Lucas Hernan Mayoni",
-      title: "Lead Developer",
-      company: "Creative Labs",
-      avatar: "/avatars/lucas-mayoni.jpg",
-    },
-    source: "linkedin",
-  },
-  {
-    id: "7",
-    text: "Leandro combines deep technical expertise with excellent communication skills. He's able to explain complex concepts clearly and always finds the most efficient solutions to challenging problems.",
-    author: {
-      name: "Ramiro Rela",
-      title: "CTO",
-      company: "StartupHub",
-      avatar: "/avatars/ramiro-rela.jpg",
-    },
-    source: "linkedin",
-  },
-  {
-    id: "8",
-    text: "Leandro's contributions to our projects have been invaluable. His ability to architect scalable solutions and mentor other developers makes him an exceptional team member.",
-    author: {
-      name: "Jesus de Lucas",
-      title: "Engineering Director",
-      company: "TechCorp",
-      avatar: "/avatars/jesus-lucas.jpg",
-    },
-    source: "linkedin",
-  },
-  {
-    id: "9",
-    text: "Working with Leandro is always a learning experience. His deep understanding of web technologies and best practices helps elevate the entire team's performance.",
-    author: {
-      name: "Joan Massana Pulido",
-      title: "Frontend Architect",
-      company: "WebStudio",
-      avatar: "/avatars/joan-massana.jpg",
-    },
-    source: "linkedin",
-  },
+      name: "Lucas Mayoni",
+      title: "Compliance",
+      avatar: "src/images/clients/Lucas.jpg",
+    }
+  }
 ];
 
 const Certifications = () => {
@@ -205,25 +157,10 @@ const Certifications = () => {
                     {/* Quotation mark icon */}
                     <Quote className="absolute top-6 right-6 w-16 h-16 text-primary/20" />
                     
-                    {/* LinkedIn logo */}
-                    {testimonial.source === "linkedin" && (
-                      <div className="mb-4">
-                        <Linkedin className="w-5 h-5 text-primary" />
-                      </div>
-                    )}
-
                     {/* Testimonial text */}
                     <p className="text-foreground mb-6 flex-1 line-clamp-5 leading-relaxed">
                       {testimonial.text}
                     </p>
-
-                    {/* Read more link */}
-                    <a
-                      href={testimonial.author.linkedinUrl || "#"}
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors mb-6 inline-flex items-center gap-1"
-                    >
-                      Read more <ChevronRight className="w-4 h-4" />
-                    </a>
 
                     {/* Author info */}
                     <div className="flex items-center gap-4 pt-4 border-t border-border">

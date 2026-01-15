@@ -1,178 +1,184 @@
-# Welcome to your Lovable project
+# Noriaki Nishida - Portfolio Website
 
-## Project info
+Portfolio website of **Noriaki Nishida** (Max-Dev), a Full Stack Engineer based in Tottori City, Japan.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 👨‍💻 About Me
 
-## How can I edit this code?
+I'm a passionate and detail-oriented Full Stack Engineer with **8+ years of experience** in developing robust and scalable web applications. I specialize in creating exceptional user experiences through modern frontend and backend technologies.
 
-There are several ways of editing your application.
+**Location:** Tottori City, Japan  
+**Website:** [www.max-dev.xyz](https://www.max-dev.xyz/)  
+**Email:** noriakinishida38@gmail.com  
+**Phone:** +81 070 2478 6494
 
-**Use Lovable**
+## 🚀 Technologies & Skills
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Technical & Development Skills
+- **Frontend:** JavaScript, TypeScript, React/Redux, Vue.js, AngularJS
+- **Backend:** Node.js, Express.js, Python (Django, Flask), PHP (Laravel, WordPress)
+- **Databases:** PostgreSQL, MongoDB, MySQL, Redis
+- **APIs:** RESTful APIs, GraphQL
+- **DevOps:** Git, Docker, AWS, CI/CD pipelines
+- **Styling:** Tailwind CSS, Bootstrap, Material-UI
+- **Testing:** Jest, Mocha, Cypress
 
-Changes made via Lovable will be committed automatically to this repo.
+### Human & Creative Skills
+- Positive Attitude
+- Teamwork & Collaboration
+- Communication
+- Problem Solving
+- Analytical Thinking
+- Creativity
+- Adaptability & Flexibility
+- Automation & Integration
 
-**Use your preferred IDE**
+## 💼 Professional Experience
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Full Stack Engineer at Human Resocia Co., Ltd
+**March 2019 – July 2022**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Developed and maintained full-stack web applications using React.js and Node.js
+- Designed RESTful APIs and integrated third-party services including payment gateways and social login
+- Built scalable databases using MongoDB and MySQL, achieving 30% faster data retrieval
+- Collaborated with UX/UI designers to create responsive, user-friendly interfaces
+- Improved performance and reduced load times by 25% through optimization and caching strategies
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This portfolio is built with modern web technologies:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Framework:** React 18 with TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui (Radix UI)
+- **Animations:** Framer Motion
+- **Charts:** Recharts
+- **Icons:** Lucide React
+- **Theme:** next-themes (Dark/Light mode)
+- **Email:** EmailJS
+- **Deployment:** Vercel
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📦 Installation & Setup
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-**Edit a file directly in GitHub**
+### Installation Steps
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd Portfolio
+   ```
 
-**Use GitHub Codespaces**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. **Set up environment variables** (optional, for contact form)
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID=your_confirmation_template_id
+   ```
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## Contact Form Setup (EmailJS)
-
-The contact form uses EmailJS to send emails directly to your inbox. To set it up:
-
-1. **Sign up for EmailJS** (free account available):
-   - Visit https://www.emailjs.com/
-   - Create an account and verify your email
-
-2. **Create an Email Service**:
-   - Go to "Email Services" in the dashboard
-   - Add a new service (Gmail, Outlook, SMTP, etc.)
-   - **For Gmail**: 
-     - Click "Connect Account" and authorize with your Google account
-     - **IMPORTANT**: Make sure to grant ALL requested permissions (especially "Send email" scope)
-     - If you get a 412 error, go to Settings > Re-authenticate and grant all permissions
-   - **For Outlook**: Similar process, authorize with Microsoft account
-   - **For SMTP**: Enter your SMTP server details (more reliable, recommended)
-   - Copy your **Service ID**
-   - **Note**: If Gmail gives authentication errors (412), consider using Outlook or SMTP instead
-
-3. **Create Email Templates**:
-
-   **Option A: Send to Both Recipients Using CC (Simplest)**
-   
-   - Go to "Email Templates"
-   - Create a new template
-   - **REQUIRED template variables** (must include these):
-     - `{{from_name}}` - Sender's name
-     - `{{from_email}}` - Sender's email
-     - `{{subject}}` - Email subject
-     - `{{message}}` - Message content
-   - **OPTIONAL template variables** (only include if you want them):
-     - `{{company}}` - Company name
-     - `{{tags}}` - Selected tags
-   - **Set "To Email" field**: `noriakinishida38@gmail.com` (YOUR email address)
-   - **Set "CC" field**: `{{from_email}}` (sender's email - they'll receive a copy)
-   - Set "Reply To" to: `{{from_email}}` (this allows you to reply directly to the sender)
-   - **Email Subject**: Use `{{subject}}` or a fixed subject like "New Contact Form Submission"
-   - **Email Content**: Example template:
-     ```
-     New message from {{from_name}} ({{from_email}})
-     
-     Subject: {{subject}}
-     
-     {{message}}
-     
-     Company: {{company}}
-     Tags: {{tags}}
-     ```
-   - Copy your **Template ID**
-
-   **Option B: Send Two Separate Emails (More Control)**
-   
-   - Create **Template 1** (Form Submission - to you):
-     - "To Email": `noriakinishida38@gmail.com`
-     - "Reply To": `{{from_email}}`
-     - Use the same variables as Option A
-     - Copy this **Template ID** → Use as `VITE_EMAILJS_TEMPLATE_ID`
-   
-   - Create **Template 2** (Confirmation - to sender):
-     - "To Email": `{{from_email}}` (sender's email)
-     - "Reply To": `noriakinishida38@gmail.com` (your email)
-     - Subject: "Thank you for contacting me" or similar
-     - Content: Confirmation message like:
-       ```
-       Hi {{to_name}},
-       
-       Thank you for reaching out! I've received your message and will get back to you soon.
-       
-       Best regards,
-       [Your Name]
-       ```
-     - Variables: `{{to_name}}`, `{{to_email}}`, `{{subject}}`
-     - Copy this **Template ID** → Use as `VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID`
-   
-   - Add to your `.env` file:
-     ```
-     VITE_EMAILJS_CONFIRMATION_TEMPLATE_ID=your_confirmation_template_id_here
-     ```
-
-   **Important**: 
-   - Only use the variables listed above. Adding extra variables that aren't sent will cause a 422 error.
-   - For Option A, both you and the sender will receive the same email (with CC).
-   - For Option B, you receive the form submission and the sender receives a confirmation.
-
-4. **Get your Public Key**:
-   - Go to "Account" > "General"
-   - Copy your **Public Key**
-
-5. **Create `.env` file**:
-   - Create a `.env` file in the root directory
-   - Add these variables:
-     ```
-     VITE_EMAILJS_SERVICE_ID=your_service_id_here
-     VITE_EMAILJS_TEMPLATE_ID=your_template_id_here
-     VITE_EMAILJS_PUBLIC_KEY=your_public_key_here
-     ```
-
-6. **Restart your dev server**:
-   ```sh
+4. **Start development server**
+   ```bash
    npm run dev
    ```
 
-**Note**: If EmailJS is not configured, the form will fall back to opening your default email client with a pre-filled message.
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-## How can I deploy this project?
+## 📧 Contact Form Setup
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+The contact form uses EmailJS to send emails. To set it up:
 
-## Can I connect a custom domain to my Lovable project?
+1. Sign up for [EmailJS](https://www.emailjs.com/) (free account available)
+2. Create an Email Service (Gmail, Outlook, or SMTP)
+3. Create an Email Template with variables: `{{from_name}}`, `{{from_email}}`, `{{subject}}`, `{{message}}`
+4. Set "To Email" to: `noriakinishida38@gmail.com`
+5. Get your Service ID, Template ID, and Public Key
+6. Add them to your `.env` file
 
-Yes, you can!
+**Note:** If EmailJS is not configured, the form will fall back to opening your default email client.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🌐 Deployment
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is deployed on **Vercel**. To deploy:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically build and deploy your site
+
+Or use the Vercel CLI:
+```bash
+npm i -g vercel
+vercel
+```
+
+## 📁 Project Structure
+
+```
+Portfolio/
+├── public/              # Static assets
+│   ├── images/         # Project and client images
+│   ├── favicon.ico     # Site favicon
+│   └── ...
+├── src/
+│   ├── components/     # React components
+│   │   ├── layout/    # Navbar, Footer, Sidebar
+│   │   ├── sections/  # Hero, About, Skills, etc.
+│   │   └── ui/        # shadcn/ui components
+│   ├── pages/         # Page components
+│   ├── hooks/         # Custom React hooks
+│   └── ...
+└── ...
+```
+
+## 🎨 Features
+
+- ✅ Responsive design (mobile-first)
+- ✅ Dark/Light theme toggle
+- ✅ Smooth scrolling navigation
+- ✅ Animated sections with Framer Motion
+- ✅ Interactive skills radar charts
+- ✅ Project showcase with images
+- ✅ Contact form with EmailJS integration
+- ✅ SEO optimized
+- ✅ Accessible (ARIA labels, semantic HTML)
+
+## 📄 Resume
+
+Resumes are available in:
+- **English:** Download from the "Resume" dropdown in the Hero section
+- **Japanese (日本語):** Download from the "Resume" dropdown in the Hero section
+
+## 🔗 Links
+
+- **Portfolio:** [www.max-dev.xyz](https://www.max-dev.xyz/)
+- **GitHub:** [github.com/Max0709202](https://github.com/Max0709202)
+- **LinkedIn:** [linkedin.com/in/nishida3149559](https://www.linkedin.com/in/nishida3149559/)
+- **Telegram:** [@nishida_N](https://t.me/@nishida_N)
+
+## 📝 License
+
+This project is private and proprietary.
+
+## 🤝 Available For
+
+- **Freelance Projects**
+- **Remote Work**
+- **Full-time Employment**
+- **Contractor Positions**
+- **Collaborations**
+
+---
+
+**Built with ❤️ by Noriaki Nishida (Max-Dev)**

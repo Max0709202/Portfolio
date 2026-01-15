@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, MapPin, Linkedin, Github, Mail, MessageCircle, Send, ChevronDown, FileText } from "lucide-react";
-import resumeEnglish from "./resume-english.pdf";
-import resumeJapanese from "./resume-japanese.pdf";
+import resumeEnglish from "./Resume-English.pdf";
+import resumeJapanese from "./Resume-Japanese.pdf";
 
 const Hero = () => {
   const [isResumeDropdownOpen, setIsResumeDropdownOpen] = useState(false);
@@ -30,7 +30,7 @@ const Hero = () => {
     e.preventDefault();
     const link = document.createElement("a");
     link.href = resumeEnglish;
-    link.download = "resume-english.pdf";
+    link.download = "Resume-English.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -41,7 +41,7 @@ const Hero = () => {
     e.preventDefault();
     const link = document.createElement("a");
     link.href = resumeJapanese;
-    link.download = "resume-japanese.pdf";
+    link.download = "Resume-Japanese.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

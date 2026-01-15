@@ -9,28 +9,28 @@ const projects = [
     description: "A full-featured online shopping platform with real-time inventory management, payment integration, and admin dashboard.",
     tech: ["React", "Node.js", "MongoDB", "Stripe", "Redis"],
     gradient: "from-primary/20 to-primary/5",
-    image: "/src/images/projects/ecommerce.png", // Add image path here, e.g., "/images/projects/ecommerce.jpg"
+    image: "/images/projects/ecommerce.png",
   },
   {
     title: "Task Management System",
     description: "Collaborative project management tool with real-time updates, team workspaces, and automated workflow features.",
     tech: ["Vue.js", "Express", "PostgreSQL", "Socket.io", "Docker"],
     gradient: "from-blue-500/20 to-blue-500/5",
-    image: "/src/images/projects/task management.jpg", // Add image path here, e.g., "/images/projects/task-management.jpg"
+    image: "/images/projects/task management.jpg",
   },
   {
     title: "Healthcare Platform",
     description: "Analytics dashboard for healthcare providers featuring patient data visualization and appointment scheduling.",
     tech: ["React", "TypeScript", "GraphQL", "AWS", "D3.js"],
     gradient: "from-emerald-500/20 to-emerald-500/5",
-    image: "/src/images/projects/healthcare.jpg", // Add image path here, e.g., "/images/projects/healthcare.jpg"
+    image: "/images/projects/healthcare.jpg",
   },
   {
     title: "Real Estate Portal",
     description: "Property listing platform with advanced search filters, virtual tours, and integrated CRM functionality.",
     tech: ["Next.js", "Python", "Django", "MySQL", "Google Maps"],
     gradient: "from-amber-500/20 to-amber-500/5",
-    image: "/src/images/projects/real-estate.jpg", // Add image path here, e.g., "/images/projects/real-estate.jpg"
+    image: "/images/projects/real-estate.jpg",
   },
 ];
 

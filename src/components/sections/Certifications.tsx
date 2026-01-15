@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Jose Canciani",
       title: "Customer Supporter",
-      avatar: "src/images/clients/Jose.jpg",
+      avatar: "/images/clients/Jose.jpg",
     },
   },
   {
@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Lucia Sarasola",
       title: "Data Analyst",
-      avatar: "src/images/clients/Lucia.jpg",
+      avatar: "/images/clients/lucia.jpg",
     }
   },
   {
@@ -46,7 +46,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Pablo Cuadrado",
       title: "Business Owner",
-      avatar: "src/images/clients/Pablo.jpg",
+      avatar: "/images/clients/Pablo.jpg",
     }
   },
   {
@@ -55,7 +55,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Jorge Luis Capoduri",
       title: "Stakeholders",
-      avatar: "src/images/clients/Jorge.jpg",
+      avatar: "/images/clients/Jorge.jpg",
     }
   },
   {
@@ -64,7 +64,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Juan Converso",
       title: "Business Intelligence",
-      avatar: "src/images/clients/Juan.jpg",
+      avatar: "/images/clients/Juan.jpg",
     }
   },
   {
@@ -73,7 +73,7 @@ const testimonials: Testimonial[] = [
     author: {
       name: "Lucas Mayoni",
       title: "Compliance",
-      avatar: "src/images/clients/Lucas.jpg",
+      avatar: "/images/clients/Lucas.jpg",
     }
   }
 ];

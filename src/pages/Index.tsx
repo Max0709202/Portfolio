@@ -8,24 +8,28 @@ import Projects from "@/components/sections/Projects";
 import Certifications from "@/components/sections/Certifications";
 import Education from "@/components/sections/Education";
 import Services from "@/components/sections/Services";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <main>
-        <Hero />
-        <div className="divider" />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Certifications />
-        <Education />
-        <Services />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <SEO />
+      <div className="min-h-screen bg-background text-foreground">
+        <Navbar />
+        <main>
+          <Hero />
+          <div className="divider" />
+          <About />
+          <Skills />
+          <Experience />
+          <Projects />
+          <Certifications />
+          <Education />
+          <Services />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
 

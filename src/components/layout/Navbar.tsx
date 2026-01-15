@@ -65,11 +65,13 @@ const Navbar = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="#" className="flex items-center gap-2" aria-label="Noriaki Nishida - Full Stack Engineer Home">
             <img
               src={logo}
-              alt="Noriaki Nishida"
+              alt="Noriaki Nishida - Full Stack Engineer and Max-Dev Logo"
               className="h-10 w-10 rounded-full border border-border/60 shadow-sm object-cover"
+              width="40"
+              height="40"
             />
           </a>
 

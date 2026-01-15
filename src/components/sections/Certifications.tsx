@@ -130,7 +130,7 @@ const Certifications = () => {
             What People Say
           </h2>
           <p className="text-lg text-muted-foreground">
-            Kind words from colleagues, clients, and collaborators
+            Kind words from clients, and collaborators
           </p>
         </motion.div>
 

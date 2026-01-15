@@ -1,5 +1,4 @@
 import Navbar from "@/components/layout/Navbar";
-import Sidebar from "@/components/layout/Sidebar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
@@ -14,7 +13,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      <Sidebar />
       <main>
         <Hero />
         <div className="divider" />

@@ -69,7 +69,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Noriaki Nishida"
-              className="h-10 w-auto rounded-full border border-border/60 shadow-sm"
+              className="h-10 w-10 rounded-full border border-border/60 shadow-sm object-cover"
             />
           </a>
 

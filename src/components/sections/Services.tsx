@@ -8,8 +8,6 @@ interface Service {
   title: string;
   description: string;
   features: string[];
-  cta: string;
-  ctaLink: string;
   featured?: boolean;
 }
 
@@ -19,16 +17,12 @@ const services: Service[] = [
     title: "Full-Stack Web Apps",
     description: "Complete web applications with modern technologies, from frontend to backend.",
     features: ["Custom development", "Database integration", "API development"],
-    cta: "Explore Web Apps",
-    ctaLink: "#web-apps",
   },
   {
     icon: <Rocket className="w-8 h-8" />,
     title: "Landing Pages & Sites",
     description: "High-converting landing pages and modern websites that drive results.",
     features: ["Responsive design", "SEO optimization", "Fast performance"],
-    cta: "Explore Landing Pages",
-    ctaLink: "#landing-pages",
     featured: true,
   },
   {
@@ -36,8 +30,6 @@ const services: Service[] = [
     title: "Automation & APIs",
     description: "Streamline workflows with custom automations and integrations.",
     features: ["Workflow automation", "Third-party integrations", "Data synchronization"],
-    cta: "Explore Automation",
-    ctaLink: "#automation",
   },
 ];
 
@@ -126,18 +118,7 @@ const Services = () => {
                     </ul>
                   )}
 
-                  {/* CTA */}
-                  <a
-                    href={service.ctaLink}
-                    className={`inline-flex items-center gap-2 font-medium transition-colors ${
-                      service.featured
-                        ? "px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90"
-                        : "text-primary hover:text-primary/80"
-                    }`}
-                  >
-                    {service.cta}
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
+                  
                 </div>
               </motion.div>
             ))}

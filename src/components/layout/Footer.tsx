@@ -368,19 +368,19 @@ const Footer = () => {
               <p className="text-sm text-muted-foreground mb-4">Or connect via</p>
               <div className="flex items-center gap-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/nishida3149559/"
                   className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary/50 transition-all"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/Max0709202"
                   className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary/50 transition-all"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://wa.me/817024786494"
                   className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center text-foreground hover:text-primary hover:border-primary/50 transition-all"
                 >
                   <MessageCircle className="w-5 h-5" />

@@ -1,8 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, MapPin, Linkedin, Github, Mail, MessageCircle, Send, ChevronDown, FileText } from "lucide-react";
-import resumeEnglish from "./Resume-English.pdf";
-import resumeJapanese from "./Resume-Japanese.pdf";
+
+// Resume PDFs are in public/ so they're served at root and work on all platforms (incl. Vercel)
+const resumeEnglishUrl = "/Resume-English.pdf";
+const resumeJapaneseUrl = "/Resume-Japanese.pdf";
 
 const Hero = () => {
   const [isResumeDropdownOpen, setIsResumeDropdownOpen] = useState(false);
@@ -29,7 +31,7 @@ const Hero = () => {
   const handleDownloadEnglish = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const link = document.createElement("a");
-    link.href = resumeEnglish;
+    link.href = resumeEnglishUrl;
     link.download = "Resume-English.pdf";
     document.body.appendChild(link);
     link.click();
@@ -40,7 +42,7 @@ const Hero = () => {
   const handleDownloadJapanese = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const link = document.createElement("a");
-    link.href = resumeJapanese;
+    link.href = resumeJapaneseUrl;
     link.download = "Resume-Japanese.pdf";
     document.body.appendChild(link);
     link.click();

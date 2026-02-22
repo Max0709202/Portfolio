@@ -5,6 +5,31 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    role: "Senior Software Development Engineer",
+    company: "Grease Co., Ltd",
+    period: "January 2024 – March 2025",
+    responsibilities: [
+      "Led end-to-end development of execuwell.jp, delivering a production-grade web platform from requirements through launch (architecture, implementation, release)",
+      "Designed and built scalable backend APIs and core business logic to support user onboarding, content/feature management, and secure account workflows",
+      "Implemented responsive, SEO-friendly front-end pages and optimized site performance to improve Core Web Vitals and conversion rates (React/Next.js, SSR/SSG, caching)",
+      "Built a maintainable data layer with clean schemas, migrations, and query optimization to support growth and reporting needs (Supabase/MySQL, ORM)",
+      "Integrated third-party services for email/notifications, analytics, and payments where applicable, ensuring reliable error handling and observability (webhooks,retries, idempotency)",
+      "Partnered with product and stakeholders to define milestones, prioritize roadmap items, and deliver iterative improvements based on user feedback and data"
+    ],
+  },
+  {
+    role: "Backend Engineer",
+    company: "Kawasaki Heavy Industries",
+    period: "October 2022 – October 2023",
+    responsibilities: [
+      "Built and maintained backend services for industrial/IoT and manufacturing adjacent systems, delivering high-availability APIs for internal and external stakeholders (Java/Spring Boot, Node.js, REST)",
+      "Designed and optimized relational data models and complex queries for production workloads, improving throughput and reducing latency (PostgreSQL/MySQL, indexing, query tuning)",
+      "Hardened authentication/authorization flows and service-to-service access controls, aligning systems with corporate security requirements (OAuth2, JWT, RBAC, secrets management)",
+      "Improved release quality and deployment speed by standardizing CI/CD pipelines and automating testing, migrations, and rollbacks (GitHub Actions/Jenkins, Docker,IaC)",
+      "Collaborated with cross-functional teams (manufacturing, QA, security) to translate operational requirements into scalable backend designs and deliver features on schedule using Agile/Scrum",
+    ],
+  },
+  {
     role: "Full Stack Engineer",
     company: "Human Resocia Co., Ltd",
     period: "March 2019 – July 2022",
